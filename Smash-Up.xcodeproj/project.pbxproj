@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19D91EB0A77B004EBC43 /* AppDelegate.swift */; };
-		929E19DC1EB0A77B004EBC43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19DB1EB0A77B004EBC43 /* ViewController.swift */; };
 		929E19DF1EB0A77B004EBC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929E19DD1EB0A77B004EBC43 /* Main.storyboard */; };
 		929E19E11EB0A77B004EBC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929E19E01EB0A77B004EBC43 /* Assets.xcassets */; };
 		929E19E41EB0A77B004EBC43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929E19E21EB0A77B004EBC43 /* LaunchScreen.storyboard */; };
 		929E19EF1EB0A77B004EBC43 /* Smash_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19EE1EB0A77B004EBC43 /* Smash_UpUITests.swift */; };
+		929E19FA1EB0A807004EBC43 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19F91EB0A807004EBC43 /* Player.swift */; };
+		929E19FC1EB0A89B004EBC43 /* Faction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19FB1EB0A89B004EBC43 /* Faction.swift */; };
+		929E19FE1EB0A9B8004EBC43 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19FD1EB0A9B8004EBC43 /* SetupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,6 @@
 /* Begin PBXFileReference section */
 		929E19D61EB0A77B004EBC43 /* Smash-Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smash-Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		929E19D91EB0A77B004EBC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		929E19DB1EB0A77B004EBC43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		929E19DE1EB0A77B004EBC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		929E19E01EB0A77B004EBC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		929E19E31EB0A77B004EBC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,9 @@
 		929E19EA1EB0A77B004EBC43 /* Smash-UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smash-UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		929E19EE1EB0A77B004EBC43 /* Smash_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smash_UpUITests.swift; sourceTree = "<group>"; };
 		929E19F01EB0A77B004EBC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		929E19F91EB0A807004EBC43 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		929E19FB1EB0A89B004EBC43 /* Faction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Faction.swift; sourceTree = "<group>"; };
+		929E19FD1EB0A9B8004EBC43 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				929E19D91EB0A77B004EBC43 /* AppDelegate.swift */,
-				929E19DB1EB0A77B004EBC43 /* ViewController.swift */,
 				929E19DD1EB0A77B004EBC43 /* Main.storyboard */,
 				929E19E01EB0A77B004EBC43 /* Assets.xcassets */,
 				929E19E21EB0A77B004EBC43 /* LaunchScreen.storyboard */,
 				929E19E51EB0A77B004EBC43 /* Info.plist */,
+				929E19F91EB0A807004EBC43 /* Player.swift */,
+				929E19FB1EB0A89B004EBC43 /* Faction.swift */,
+				929E19FD1EB0A9B8004EBC43 /* SetupViewController.swift */,
 			);
 			path = "Smash-Up";
 			sourceTree = "<group>";
@@ -201,7 +207,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				929E19DC1EB0A77B004EBC43 /* ViewController.swift in Sources */,
+				929E19FE1EB0A9B8004EBC43 /* SetupViewController.swift in Sources */,
+				929E19FC1EB0A89B004EBC43 /* Faction.swift in Sources */,
+				929E19FA1EB0A807004EBC43 /* Player.swift in Sources */,
 				929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
