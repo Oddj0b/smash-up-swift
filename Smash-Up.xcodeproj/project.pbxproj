@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19D91EB0A77B004EBC43 /* AppDelegate.swift */; };
+		929E19DC1EB0A77B004EBC43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19DB1EB0A77B004EBC43 /* ViewController.swift */; };
+		929E19DF1EB0A77B004EBC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929E19DD1EB0A77B004EBC43 /* Main.storyboard */; };
+		929E19E11EB0A77B004EBC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929E19E01EB0A77B004EBC43 /* Assets.xcassets */; };
+		929E19E41EB0A77B004EBC43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929E19E21EB0A77B004EBC43 /* LaunchScreen.storyboard */; };
+		929E19EF1EB0A77B004EBC43 /* Smash_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19EE1EB0A77B004EBC43 /* Smash_UpUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		929E19EB1EB0A77B004EBC43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 929E19CE1EB0A77B004EBC43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 929E19D51EB0A77B004EBC43;
+			remoteInfo = "Smash-Up";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		929E19D61EB0A77B004EBC43 /* Smash-Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smash-Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		929E19D91EB0A77B004EBC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		929E19DB1EB0A77B004EBC43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		929E19DE1EB0A77B004EBC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		929E19E01EB0A77B004EBC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		929E19E31EB0A77B004EBC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		929E19E51EB0A77B004EBC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		929E19EA1EB0A77B004EBC43 /* Smash-UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smash-UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		929E19EE1EB0A77B004EBC43 /* Smash_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smash_UpUITests.swift; sourceTree = "<group>"; };
+		929E19F01EB0A77B004EBC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		929E19D31EB0A77B004EBC43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929E19E71EB0A77B004EBC43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		929E19CD1EB0A77B004EBC43 = {
+			isa = PBXGroup;
+			children = (
+				929E19D81EB0A77B004EBC43 /* Smash-Up */,
+				929E19ED1EB0A77B004EBC43 /* Smash-UpUITests */,
+				929E19D71EB0A77B004EBC43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		929E19D71EB0A77B004EBC43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				929E19D61EB0A77B004EBC43 /* Smash-Up.app */,
+				929E19EA1EB0A77B004EBC43 /* Smash-UpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		929E19D81EB0A77B004EBC43 /* Smash-Up */ = {
+			isa = PBXGroup;
+			children = (
+				929E19D91EB0A77B004EBC43 /* AppDelegate.swift */,
+				929E19DB1EB0A77B004EBC43 /* ViewController.swift */,
+				929E19DD1EB0A77B004EBC43 /* Main.storyboard */,
+				929E19E01EB0A77B004EBC43 /* Assets.xcassets */,
+				929E19E21EB0A77B004EBC43 /* LaunchScreen.storyboard */,
+				929E19E51EB0A77B004EBC43 /* Info.plist */,
+			);
+			path = "Smash-Up";
+			sourceTree = "<group>";
+		};
+		929E19ED1EB0A77B004EBC43 /* Smash-UpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				929E19EE1EB0A77B004EBC43 /* Smash_UpUITests.swift */,
+				929E19F01EB0A77B004EBC43 /* Info.plist */,
+			);
+			path = "Smash-UpUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		929E19D51EB0A77B004EBC43 /* Smash-Up */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929E19F31EB0A77B004EBC43 /* Build configuration list for PBXNativeTarget "Smash-Up" */;
+			buildPhases = (
+				929E19D21EB0A77B004EBC43 /* Sources */,
+				929E19D31EB0A77B004EBC43 /* Frameworks */,
+				929E19D41EB0A77B004EBC43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smash-Up";
+			productName = "Smash-Up";
+			productReference = 929E19D61EB0A77B004EBC43 /* Smash-Up.app */;
+			productType = "com.apple.product-type.application";
+		};
+		929E19E91EB0A77B004EBC43 /* Smash-UpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929E19F61EB0A77B004EBC43 /* Build configuration list for PBXNativeTarget "Smash-UpUITests" */;
+			buildPhases = (
+				929E19E61EB0A77B004EBC43 /* Sources */,
+				929E19E71EB0A77B004EBC43 /* Frameworks */,
+				929E19E81EB0A77B004EBC43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				929E19EC1EB0A77B004EBC43 /* PBXTargetDependency */,
+			);
+			name = "Smash-UpUITests";
+			productName = "Smash-UpUITests";
+			productReference = 929E19EA1EB0A77B004EBC43 /* Smash-UpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		929E19CE1EB0A77B004EBC43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "RibEye Studios";
+				TargetAttributes = {
+					929E19D51EB0A77B004EBC43 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = H2H58GY7CF;
+						ProvisioningStyle = Automatic;
+					};
+					929E19E91EB0A77B004EBC43 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = H2H58GY7CF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 929E19D51EB0A77B004EBC43;
+					};
+				};
+			};
+			buildConfigurationList = 929E19D11EB0A77B004EBC43 /* Build configuration list for PBXProject "Smash-Up" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 929E19CD1EB0A77B004EBC43;
+			productRefGroup = 929E19D71EB0A77B004EBC43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				929E19D51EB0A77B004EBC43 /* Smash-Up */,
+				929E19E91EB0A77B004EBC43 /* Smash-UpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		929E19D41EB0A77B004EBC43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929E19E41EB0A77B004EBC43 /* LaunchScreen.storyboard in Resources */,
+				929E19E11EB0A77B004EBC43 /* Assets.xcassets in Resources */,
+				929E19DF1EB0A77B004EBC43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929E19E81EB0A77B004EBC43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		929E19D21EB0A77B004EBC43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929E19DC1EB0A77B004EBC43 /* ViewController.swift in Sources */,
+				929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		929E19E61EB0A77B004EBC43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929E19EF1EB0A77B004EBC43 /* Smash_UpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		929E19EC1EB0A77B004EBC43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 929E19D51EB0A77B004EBC43 /* Smash-Up */;
+			targetProxy = 929E19EB1EB0A77B004EBC43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		929E19DD1EB0A77B004EBC43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				929E19DE1EB0A77B004EBC43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		929E19E21EB0A77B004EBC43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				929E19E31EB0A77B004EBC43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		929E19F11EB0A77B004EBC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		929E19F21EB0A77B004EBC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		929E19F41EB0A77B004EBC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H2H58GY7CF;
+				INFOPLIST_FILE = "Smash-Up/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ribeyestudios.Smash-Up";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		929E19F51EB0A77B004EBC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H2H58GY7CF;
+				INFOPLIST_FILE = "Smash-Up/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ribeyestudios.Smash-Up";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		929E19F71EB0A77B004EBC43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = H2H58GY7CF;
+				INFOPLIST_FILE = "Smash-UpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ribeyestudios.Smash-UpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Smash-Up";
+			};
+			name = Debug;
+		};
+		929E19F81EB0A77B004EBC43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = H2H58GY7CF;
+				INFOPLIST_FILE = "Smash-UpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ribeyestudios.Smash-UpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Smash-Up";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		929E19D11EB0A77B004EBC43 /* Build configuration list for PBXProject "Smash-Up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929E19F11EB0A77B004EBC43 /* Debug */,
+				929E19F21EB0A77B004EBC43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929E19F31EB0A77B004EBC43 /* Build configuration list for PBXNativeTarget "Smash-Up" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929E19F41EB0A77B004EBC43 /* Debug */,
+				929E19F51EB0A77B004EBC43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		929E19F61EB0A77B004EBC43 /* Build configuration list for PBXNativeTarget "Smash-UpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929E19F71EB0A77B004EBC43 /* Debug */,
+				929E19F81EB0A77B004EBC43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 929E19CE1EB0A77B004EBC43 /* Project object */;
+}
