@@ -14,7 +14,9 @@
 		929E19EF1EB0A77B004EBC43 /* Smash_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19EE1EB0A77B004EBC43 /* Smash_UpUITests.swift */; };
 		929E19FA1EB0A807004EBC43 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19F91EB0A807004EBC43 /* Player.swift */; };
 		929E19FC1EB0A89B004EBC43 /* Faction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19FB1EB0A89B004EBC43 /* Faction.swift */; };
-		929E19FE1EB0A9B8004EBC43 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19FD1EB0A9B8004EBC43 /* SetupViewController.swift */; };
+		929E1A001EB0AD58004EBC43 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19FF1EB0AD58004EBC43 /* Game.swift */; };
+		929E1A021EB0B988004EBC43 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E1A011EB0B988004EBC43 /* PlayerView.swift */; };
+		929E1A071EB0FD83004EBC43 /* GameSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E1A061EB0FD83004EBC43 /* GameSetupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,9 @@
 		929E19F01EB0A77B004EBC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		929E19F91EB0A807004EBC43 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		929E19FB1EB0A89B004EBC43 /* Faction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Faction.swift; sourceTree = "<group>"; };
-		929E19FD1EB0A9B8004EBC43 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		929E19FF1EB0AD58004EBC43 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		929E1A011EB0B988004EBC43 /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		929E1A061EB0FD83004EBC43 /* GameSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSetupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		929E19D81EB0A77B004EBC43 /* Smash-Up */ = {
 			isa = PBXGroup;
 			children = (
+				929E1A031EB0FC63004EBC43 /* SetupCollectionView */,
 				929E19D91EB0A77B004EBC43 /* AppDelegate.swift */,
 				929E19DD1EB0A77B004EBC43 /* Main.storyboard */,
 				929E19E01EB0A77B004EBC43 /* Assets.xcassets */,
@@ -88,7 +93,8 @@
 				929E19E51EB0A77B004EBC43 /* Info.plist */,
 				929E19F91EB0A807004EBC43 /* Player.swift */,
 				929E19FB1EB0A89B004EBC43 /* Faction.swift */,
-				929E19FD1EB0A9B8004EBC43 /* SetupViewController.swift */,
+				929E19FF1EB0AD58004EBC43 /* Game.swift */,
+				929E1A011EB0B988004EBC43 /* PlayerView.swift */,
 			);
 			path = "Smash-Up";
 			sourceTree = "<group>";
@@ -100,6 +106,14 @@
 				929E19F01EB0A77B004EBC43 /* Info.plist */,
 			);
 			path = "Smash-UpUITests";
+			sourceTree = "<group>";
+		};
+		929E1A031EB0FC63004EBC43 /* SetupCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				929E1A061EB0FD83004EBC43 /* GameSetupViewController.swift */,
+			);
+			name = SetupCollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,10 +221,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				929E19FE1EB0A9B8004EBC43 /* SetupViewController.swift in Sources */,
+				929E1A001EB0AD58004EBC43 /* Game.swift in Sources */,
 				929E19FC1EB0A89B004EBC43 /* Faction.swift in Sources */,
+				929E1A021EB0B988004EBC43 /* PlayerView.swift in Sources */,
 				929E19FA1EB0A807004EBC43 /* Player.swift in Sources */,
 				929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */,
+				929E1A071EB0FD83004EBC43 /* GameSetupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +434,7 @@
 				929E19F51EB0A77B004EBC43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		929E19F61EB0A77B004EBC43 /* Build configuration list for PBXNativeTarget "Smash-UpUITests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +443,7 @@
 				929E19F81EB0A77B004EBC43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
