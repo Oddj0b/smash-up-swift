@@ -11,16 +11,9 @@ import UIKit
 private let reuseIdentifier = "PlayerCell"
 
 class GameSetupViewController: UICollectionViewController {
-//    @IBOutlet weak var cellLabel: UILabel!
-    @IBOutlet weak var cellPlayerName: UITextField!
-//    @IBOutlet weak var cellFaction2: UIButton!
-//    @IBOutlet weak var cellFaction1: UIButton!
     let Players = ["Danielle", "Villars", "Peter", "Flemming"]
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(Players.count)
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
         layout.itemSize = CGSize(width: 90, height: 90)
@@ -42,6 +35,7 @@ override func collectionView(_ collectionView: UICollectionView, numberOfItemsIn
 override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
         cell.backgroundColor = UIColor.black
+        
         return cell
     }
 }
