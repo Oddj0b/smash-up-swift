@@ -1,0 +1,1 @@
+![Build status](https://the-bridge-int.trafficmanager.net/v0.1/apps/fa313e92-1e21-49fe-83e1-d46be2a4b343/branches/master/badge)
