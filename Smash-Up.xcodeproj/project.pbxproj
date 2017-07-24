@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		927C3F621F224CFE00233977 /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C3F611F224CFE00233977 /* Randoms.swift */; };
 		929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19D91EB0A77B004EBC43 /* AppDelegate.swift */; };
 		929E19DF1EB0A77B004EBC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929E19DD1EB0A77B004EBC43 /* Main.storyboard */; };
 		929E19E11EB0A77B004EBC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929E19E01EB0A77B004EBC43 /* Assets.xcassets */; };
@@ -16,7 +17,8 @@
 		929E19FC1EB0A89B004EBC43 /* Faction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19FB1EB0A89B004EBC43 /* Faction.swift */; };
 		929E1A001EB0AD58004EBC43 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19FF1EB0AD58004EBC43 /* Game.swift */; };
 		929E1A021EB0B988004EBC43 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E1A011EB0B988004EBC43 /* PlayerView.swift */; };
-		929E1A071EB0FD83004EBC43 /* GameSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E1A061EB0FD83004EBC43 /* GameSetupViewController.swift */; };
+		92A7F8F11F19151B0082F8A9 /* SetupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7F8F01F19151B0082F8A9 /* SetupTableViewController.swift */; };
+		92A7F8F31F1916D70082F8A9 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7F8F21F1916D70082F8A9 /* PlayerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		927C3F611F224CFE00233977 /* Randoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randoms.swift; sourceTree = "<group>"; };
 		929E19D61EB0A77B004EBC43 /* Smash-Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smash-Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		929E19D91EB0A77B004EBC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		929E19DE1EB0A77B004EBC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,7 +46,8 @@
 		929E19FB1EB0A89B004EBC43 /* Faction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Faction.swift; sourceTree = "<group>"; };
 		929E19FF1EB0AD58004EBC43 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		929E1A011EB0B988004EBC43 /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		929E1A061EB0FD83004EBC43 /* GameSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSetupViewController.swift; sourceTree = "<group>"; };
+		92A7F8F01F19151B0082F8A9 /* SetupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupTableViewController.swift; sourceTree = "<group>"; };
+		92A7F8F21F1916D70082F8A9 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		927C3F601F224CDF00233977 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				927C3F611F224CFE00233977 /* Randoms.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		929E19CD1EB0A77B004EBC43 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +97,7 @@
 		929E19D81EB0A77B004EBC43 /* Smash-Up */ = {
 			isa = PBXGroup;
 			children = (
+				927C3F601F224CDF00233977 /* Helpers */,
 				929E1A031EB0FC63004EBC43 /* SetupCollectionView */,
 				929E19D91EB0A77B004EBC43 /* AppDelegate.swift */,
 				929E19DD1EB0A77B004EBC43 /* Main.storyboard */,
@@ -111,7 +124,8 @@
 		929E1A031EB0FC63004EBC43 /* SetupCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				929E1A061EB0FD83004EBC43 /* GameSetupViewController.swift */,
+				92A7F8F01F19151B0082F8A9 /* SetupTableViewController.swift */,
+				92A7F8F21F1916D70082F8A9 /* PlayerTableViewCell.swift */,
 			);
 			name = SetupCollectionView;
 			sourceTree = "<group>";
@@ -221,12 +235,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A7F8F31F1916D70082F8A9 /* PlayerTableViewCell.swift in Sources */,
 				929E1A001EB0AD58004EBC43 /* Game.swift in Sources */,
 				929E19FC1EB0A89B004EBC43 /* Faction.swift in Sources */,
 				929E1A021EB0B988004EBC43 /* PlayerView.swift in Sources */,
+				927C3F621F224CFE00233977 /* Randoms.swift in Sources */,
 				929E19FA1EB0A807004EBC43 /* Player.swift in Sources */,
 				929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */,
-				929E1A071EB0FD83004EBC43 /* GameSetupViewController.swift in Sources */,
+				92A7F8F11F19151B0082F8A9 /* SetupTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +404,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ribeyestudios.Smash-Up";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ce77eba1-ec11-4258-9b97-2ff243237245";
+				PROVISIONING_PROFILE = "563b0696-772e-4462-a6be-802a410f60fd";
 				PROVISIONING_PROFILE_SPECIFIER = "distribution.smash-up";
 				SWIFT_VERSION = 3.0;
 			};
