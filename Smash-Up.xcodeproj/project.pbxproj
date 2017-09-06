@@ -18,7 +18,6 @@
 		929E1A001EB0AD58004EBC43 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19FF1EB0AD58004EBC43 /* Game.swift */; };
 		929E1A021EB0B988004EBC43 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E1A011EB0B988004EBC43 /* PlayerView.swift */; };
 		92A7F8F11F19151B0082F8A9 /* SetupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7F8F01F19151B0082F8A9 /* SetupTableViewController.swift */; };
-		92A7F8F31F1916D70082F8A9 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7F8F21F1916D70082F8A9 /* PlayerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		929E19FF1EB0AD58004EBC43 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		929E1A011EB0B988004EBC43 /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		92A7F8F01F19151B0082F8A9 /* SetupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupTableViewController.swift; sourceTree = "<group>"; };
-		92A7F8F21F1916D70082F8A9 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				92A7F8F01F19151B0082F8A9 /* SetupTableViewController.swift */,
-				92A7F8F21F1916D70082F8A9 /* PlayerTableViewCell.swift */,
 			);
 			name = SetupCollectionView;
 			sourceTree = "<group>";
@@ -242,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92A7F8F31F1916D70082F8A9 /* PlayerTableViewCell.swift in Sources */,
 				929E1A001EB0AD58004EBC43 /* Game.swift in Sources */,
 				929E19FC1EB0A89B004EBC43 /* Faction.swift in Sources */,
 				929E1A021EB0B988004EBC43 /* PlayerView.swift in Sources */,

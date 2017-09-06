@@ -9,10 +9,31 @@
 import UIKit
 
 class SetupTableViewController: UITableViewController {
-    let model: [[UIColor]] = generateRandomData()
+    var players: [Player]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("Setup Table View controller loaded")
+        //TODO: Make it interactable instead of this
+        let player1 = Player()
+        let player2 = Player()
+        let player3 = Player()
+        let player4 = Player()
+        
+        player1.name = "Danielle"
+        player1.factions = ["Teddy Bears", "Dragons"]
+        
+        player2.name = "Peter"
+        player2.factions = ["Ghosts", "Time travellers"]
+        
+        player3.name = "Flemming"
+        player3.factions = ["Pirates", "Elder Things"]
+        
+        player4.name = "Lukas"
+        player4.factions = ["Cyborg Apes", "Werewolves"]
+        
+        players = [player1, player2, player3, player4]
     }
     
     override func didReceiveMemoryWarning() {
@@ -20,43 +41,24 @@ class SetupTableViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
-    
-    
-    
-    
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let p = players {
+            print(p)
+            return p.count
+        }
+        
         return 0
     }
-    func tableView(tableView: UITableView, numberOfRowsInSection: Int) -> Int{
-        return model.count
-    }
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let tableViewCell = cell as? PlayerTableViewCell else { return }
-        
-        tableViewCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)
-    }
     
-    
-    func tableView(tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell", for: indexPath)
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "playerCell", for: indexPath)
+        let player = players?[indexPath.row]
         
+        if let p = player{
+            cell.textLabel?.text = p.name
+        }
         return cell
     }
 }
-extension SetupTableViewController: UICollectionViewDelegate, UICollectionViewDataSource{
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return model[collectionView.tag].count
-    }
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-        
-        cell.backgroundColor = model[collectionView.tag][indexPath.item]
-        
-        return cell
-    }
-    
-}
+
