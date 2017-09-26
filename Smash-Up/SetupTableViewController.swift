@@ -9,12 +9,12 @@
 import UIKit
 
 class SetupTableViewController: UITableViewController {
+    //let backgrouncolor = UIColor.randomColor()
     var players: [Player]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("Setup Table View controller loaded")
         //TODO: Make it interactable instead of this
         let player1 = Player()
         let player2 = Player()
@@ -34,6 +34,8 @@ class SetupTableViewController: UITableViewController {
         player4.factions = ["Cyborg Apes", "Werewolves"]
         
         players = [player1, player2, player3, player4]
+        
+        print(player4.factions![0])
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,7 +45,6 @@ class SetupTableViewController: UITableViewController {
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let p = players {
-            print(p)
             return p.count
         }
         
@@ -51,14 +52,19 @@ class SetupTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //TODO: Use SetupTableViewCell instead of generic cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell", for: indexPath)
         
         let player = players?[indexPath.row]
         
         if let p = player{
             cell.textLabel?.text = p.name
+            
+            
+//            cell.backgroundColor? = UIColor.randomColor()
         }
         return cell
     }
+    
 }
 

@@ -9,4 +9,5 @@
 import Foundation
 class Faction{
     var name: String?
+    var expansion: String?
 }

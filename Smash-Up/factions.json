@@ -1,0 +1,13 @@
+{
+	"expansion": {
+		"Base game": {
+			"relase date": "2012",
+			"factions": ["Pirates",
+				"Robots",
+				"Dinosaurs",
+				"Aliens",
+				"Tricksters",
+				"Zombies"]
+		} 
+	}
+}
