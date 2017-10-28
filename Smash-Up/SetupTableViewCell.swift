@@ -24,7 +24,9 @@ class SetupTableViewCell: UITableViewCell {
     }
     func update(with player: Player){
         playerName.text = player.name
-        faction1.titleLabel?.text = player.factions![0]
+        faction1.t
+        
+        title.text = player.factions![0]
         faction2.titleLabel?.text = player.factions![1]
     }
 }

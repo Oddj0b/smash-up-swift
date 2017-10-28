@@ -53,12 +53,14 @@ class SetupTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //TODO: Use SetupTableViewCell instead of generic cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell", for: indexPath) as! SetupTableViewCell
         
         let player = players?[indexPath.row]
         
         if let p = player{
-            cell.textLabel?.text = p.name
+            cell.playerName?.text = p.name
+            cell.faction1.titleLabel = p.factions[0]
+            cell.faction2.titleLabel = p.factions[1]
             
             
 //            cell.backgroundColor? = UIColor.randomColor()
