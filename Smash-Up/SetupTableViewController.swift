@@ -59,8 +59,6 @@ class SetupTableViewController: UITableViewController {
         
         if let p = player{
             cell.playerName?.text = p.name
-            cell.faction1.titleLabel = p.factions[0]
-            cell.faction2.titleLabel = p.factions[1]
             
             
 //            cell.backgroundColor? = UIColor.randomColor()
