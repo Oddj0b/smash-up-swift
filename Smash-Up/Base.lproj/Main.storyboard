@@ -1,74 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Aov-jM-y2L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qSi-w3-KY6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Setup Table View Controller-->
-        <scene sceneID="2rB-8n-M7v">
+        <!--Stack View Controller-->
+        <scene sceneID="vgL-G4-Dks">
             <objects>
-                <tableViewController id="9A5-a6-8MR" customClass="SetupTableViewController" customModule="Smash_Up" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="103" sectionHeaderHeight="28" sectionFooterHeight="28" id="9eg-VC-CP8">
+                <viewController id="qSi-w3-KY6" customClass="StackViewController" customModule="Smash_Up" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="53X-hP-JXx"/>
+                        <viewControllerLayoutGuide type="bottom" id="pxV-JO-Vdi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wAg-m0-cJe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="100" id="zyM-QF-nfZ" customClass="SetupTableViewCell" customModule="Smash_Up" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="100"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zyM-QF-nfZ" id="YlD-sO-HPq">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mav-G2-VU5">
-                                            <rect key="frame" x="203" y="8" width="77" height="77"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <state key="normal" title="Faction"/>
-                                            <connections>
-                                                <segue destination="Lmg-FX-qra" kind="presentation" id="OUE-t9-S76"/>
-                                            </connections>
-                                        </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cP-pH-PYa">
-                                            <rect key="frame" x="8" y="8" width="187" height="77"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKO-vn-xDs">
-                                            <rect key="frame" x="288" y="8" width="77" height="77"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <color key="backgroundColor" red="0.0" green="1" blue="0.91073624929999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <state key="normal" title="Faction"/>
-                                            <connections>
-                                                <segue destination="Lmg-FX-qra" kind="presentation" id="JjF-O2-3HV"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
-                                </tableViewCellContentView>
+                        <subviews>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ltf-GN-xW6">
+                                <rect key="frame" x="16" y="40" width="94" height="29"/>
                                 <connections>
-                                    <outlet property="faction1" destination="Mav-G2-VU5" id="Ehe-Fo-Za1"/>
-                                    <outlet property="faction2" destination="KKO-vn-xDs" id="4hp-0V-p9E"/>
-                                    <outlet property="playerName" destination="5cP-pH-PYa" id="ckP-l7-gAh"/>
+                                    <action selector="adjustPlayerClick:" destination="qSi-w3-KY6" eventType="valueChanged" id="Yru-x8-xtN"/>
                                 </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="9A5-a6-8MR" id="ju5-T2-J3m"/>
-                            <outlet property="delegate" destination="9A5-a6-8MR" id="5Ru-G1-Bwy"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="CHL-Sx-Uif"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H7N-jW-8Ff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJl-JX-cDC">
+                                <rect key="frame" x="317" y="44" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4pk-eO-lDq">
+                                <rect key="frame" x="0.0" y="40" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wZI-rl-N5m" customClass="PlayerView" customModule="Smash_Up" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ltf-GN-xW6" secondAttribute="trailing" id="PzT-kd-PG6"/>
+                            <constraint firstItem="ltf-GN-xW6" firstAttribute="leading" secondItem="wAg-m0-cJe" secondAttribute="leadingMargin" id="YuS-BR-wHY"/>
+                            <constraint firstItem="KJl-JX-cDC" firstAttribute="centerY" secondItem="ltf-GN-xW6" secondAttribute="centerY" id="ZaW-tg-F2w"/>
+                            <constraint firstItem="4pk-eO-lDq" firstAttribute="top" secondItem="ltf-GN-xW6" secondAttribute="bottom" constant="20" id="iBe-tk-15v"/>
+                            <constraint firstItem="ltf-GN-xW6" firstAttribute="top" secondItem="53X-hP-JXx" secondAttribute="bottom" constant="20" id="kHf-Or-vNk"/>
+                            <constraint firstItem="KJl-JX-cDC" firstAttribute="trailing" secondItem="ltf-GN-xW6" secondAttribute="trailing" id="qYv-wg-u7K"/>
+                            <constraint firstItem="ltf-GN-xW6" firstAttribute="centerX" secondItem="wAg-m0-cJe" secondAttribute="centerX" id="yeB-HA-O75"/>
+                            <constraint firstItem="4pk-eO-lDq" firstAttribute="width" secondItem="wAg-m0-cJe" secondAttribute="width" id="yfq-G4-9G3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adjustPlayers" destination="ltf-GN-xW6" id="OeM-IU-Oyn"/>
+                        <outlet property="howManyPlayers" destination="KJl-JX-cDC" id="OC9-yT-IWS"/>
+                        <outlet property="playerList" destination="4pk-eO-lDq" id="9bo-kJ-id9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vmk-FS-y2I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1423.2" y="161.46926536731635"/>
+            <point key="canvasLocation" x="1588" y="179.46026986506749"/>
         </scene>
         <!--Faction Table View Controller-->
         <scene sceneID="l8g-NW-ApG">
@@ -87,7 +83,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CZL-Eu-Wjj">
-                                            <rect key="frame" x="75" y="0.0" width="285" height="43.5"/>
+                                            <rect key="frame" x="75" y="0.0" width="284" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -111,29 +107,8 @@
             </objects>
             <point key="canvasLocation" x="2492" y="116"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="AHx-qg-NuA">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Aov-jM-y2L" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vkS-ZY-qDq">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="9A5-a6-8MR" kind="relationship" relationship="rootViewController" id="ckE-Tv-ufo"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="OVl-sT-UV0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="484" y="161.46926536731635"/>
-        </scene>
     </scenes>
     <resources>
         <image name="a29795d17f08dbf18c3845363af6ff3c" width="256" height="256"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="OUE-t9-S76"/>
-    </inferredMetricsTieBreakers>
 </document>
