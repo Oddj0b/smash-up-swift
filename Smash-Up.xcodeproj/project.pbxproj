@@ -18,7 +18,7 @@
 		929E19FC1EB0A89B004EBC43 /* Faction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19FB1EB0A89B004EBC43 /* Faction.swift */; };
 		929E1A001EB0AD58004EBC43 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19FF1EB0AD58004EBC43 /* Game.swift */; };
 		929E1A021EB0B988004EBC43 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E1A011EB0B988004EBC43 /* PlayerView.swift */; };
-		92A7F8F11F19151B0082F8A9 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7F8F01F19151B0082F8A9 /* SetupViewController.swift */; };
+		92A7F8F11F19151B0082F8A9 /* SetupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7F8F01F19151B0082F8A9 /* SetupTableViewController.swift */; };
 		92E4B9D91F76722600F7CFD3 /* FactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E4B9D81F76722600F7CFD3 /* FactionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,7 +49,7 @@
 		929E19FB1EB0A89B004EBC43 /* Faction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Faction.swift; sourceTree = "<group>"; };
 		929E19FF1EB0AD58004EBC43 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		929E1A011EB0B988004EBC43 /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
-		92A7F8F01F19151B0082F8A9 /* SetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		92A7F8F01F19151B0082F8A9 /* SetupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupTableViewController.swift; sourceTree = "<group>"; };
 		92E4B9D81F76722600F7CFD3 /* FactionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,7 +137,7 @@
 		929E1A031EB0FC63004EBC43 /* Game Setup */ = {
 			isa = PBXGroup;
 			children = (
-				92A7F8F01F19151B0082F8A9 /* SetupViewController.swift */,
+				92A7F8F01F19151B0082F8A9 /* SetupTableViewController.swift */,
 				927D241C1F601214000C61D8 /* SetupTableViewCell.swift */,
 			);
 			name = "Game Setup";
@@ -265,7 +265,7 @@
 				929E19FA1EB0A807004EBC43 /* Player.swift in Sources */,
 				929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */,
 				92E4B9D91F76722600F7CFD3 /* FactionTableViewController.swift in Sources */,
-				92A7F8F11F19151B0082F8A9 /* SetupViewController.swift in Sources */,
+				92A7F8F11F19151B0082F8A9 /* SetupTableViewController.swift in Sources */,
 				927D241D1F601214000C61D8 /* SetupTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

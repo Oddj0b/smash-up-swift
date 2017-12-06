@@ -1,5 +1,5 @@
 //
-//  SetupViewController.swift
+//  SetupTableViewController.swift
 //  Smash-Up
 //
 //  Created by Villars Gimm on 14/07/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SetupViewController: UIViewController{
+class SetupTableViewController: UITableViewController {
     //let backgrouncolor = UIColor.randomColor()
     var players: [Player]?
     
@@ -35,13 +35,36 @@ class SetupViewController: UIViewController{
         
         players = [player1, player2, player3, player4]
         
-    
-    }
-    @IBAction func addPlayer(_ sender: Any) {
-        print("Adding player view")
+        print(player4.factions![0])
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    // MARK: - Table view data source
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let p = players {
+            return p.count
+        }
+        
+        return 0
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //TODO: Use SetupTableViewCell instead of generic cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell", for: indexPath) as! SetupTableViewCell
+        
+        let player = players?[indexPath.row]
+        
+        if let p = player{
+            cell.playerName?.text = p.name
+            
+            
+//            cell.backgroundColor? = UIColor.randomColor()
+        }
+        return cell
+    }
+    
 }
+
