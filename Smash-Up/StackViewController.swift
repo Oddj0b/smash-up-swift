@@ -14,8 +14,6 @@ class StackViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,8 +22,9 @@ class StackViewController: UIViewController {
     }
     
     @IBAction func addPlayer(_ sender: Any) {
-        let view = makePlayerView()
-        playerList.addArrangedSubview(view)
+//        let view = makePlayerView()
+        let playerView = PlayerView()
+        playerList.addArrangedSubview(playerView.view)
     }
     
     func makePlayerView() -> UIView {

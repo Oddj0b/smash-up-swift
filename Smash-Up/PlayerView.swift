@@ -11,12 +11,7 @@ import UIKit
 class PlayerView: UIViewController{
     @IBOutlet weak var playerName: UILabel!
     override func viewDidLoad() {
-        
-    }
-   
-    @IBAction func setFaction1(_ sender: Any) {
+            print("PlayerView loaded")
     }
     
-    @IBAction func setFaction2(_ sender: Any) {
-    }
 }
