@@ -9,10 +9,14 @@
 import Foundation
 import UIKit
 class PlayerView: UIViewController{
+    @IBOutlet weak var playerName: UILabel!
     override func viewDidLoad() {
-        var playerName: UILabel = UILabel()
-        var faction1: UIButton = UIButton()
-        var faction2: UIButton = UIButton()
-        var playerFrame: CGRect = CGRect(x: 0, y: 0, width: 200, height: 95)
+        
+    }
+   
+    @IBAction func setFaction1(_ sender: Any) {
+    }
+    
+    @IBAction func setFaction2(_ sender: Any) {
     }
 }

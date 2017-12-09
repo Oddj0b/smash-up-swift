@@ -24,9 +24,22 @@ class StackViewController: UIViewController {
     }
     
     @IBAction func addPlayer(_ sender: Any) {
-        print("Presseing")
-        let imageView = UIImageView.init(image: #imageLiteral(resourceName: "smash-up"))
-        playerList.addArrangedSubview(imageView)
-        NSLog("Arranged subviews", playerList.arrangedSubviews)
+        let view = makePlayerView()
+        playerList.addArrangedSubview(view)
+    }
+    
+    func makePlayerView() -> UIView {
+        let playerView = UIView()
+        playerView.backgroundColor = UIColor.randomColor()
+        let nameLabel = UILabel()
+        nameLabel.text = "Enter player name"
+        playerView.addSubview(nameLabel)
+        let faction1 = UIButton()
+        faction1.titleLabel?.text = "Select first faction"
+        playerView.addSubview(faction1)
+        let faction2 = UIButton()
+        faction2.titleLabel?.text = "Select second faction"
+        playerView.addSubview(faction2)
+        return playerView
     }
 }

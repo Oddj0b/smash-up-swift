@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayerView" customModule="Smash_Up" customModuleProvider="target">
+            <connections>
+                <outlet property="playerName" destination="Opz-Be-k0Q" id="SvX-vH-efe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Player">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opz-Be-k0Q">
+                    <rect key="frame" x="0.0" y="49" width="375" height="714"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YM2-Jt-JoJ" userLabel="faction2">
+                    <rect key="frame" x="265" y="103" width="95" height="95"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Select faction"/>
+                    <connections>
+                        <action selector="setFaction2:" destination="-1" eventType="touchUpInside" id="yXI-vW-2F1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-vO-Tlf" userLabel="faction1">
+                    <rect key="frame" x="15" y="103" width="95" height="95"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Select faction"/>
+                    <connections>
+                        <action selector="setFaction1:" destination="-1" eventType="touchUpInside" id="gFf-IZ-cc4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Opz-Be-k0Q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FR6-HJ-hBl"/>
+                <constraint firstItem="Opz-Be-k0Q" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HTG-no-HQ4"/>
+                <constraint firstItem="Opz-Be-k0Q" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TKj-31-cT7"/>
+                <constraint firstItem="Opz-Be-k0Q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VQK-ld-bbg"/>
+                <constraint firstItem="Opz-Be-k0Q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="YL5-5Q-cDD"/>
+                <constraint firstItem="Opz-Be-k0Q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="fEX-tH-iFe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="55"/>
+        </view>
+    </objects>
+</document>
