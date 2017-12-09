@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qSi-w3-KY6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qSi-w3-KY6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,43 +21,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="ltf-GN-xW6">
-                                <rect key="frame" x="16" y="40" width="94" height="29"/>
-                                <connections>
-                                    <action selector="adjustPlayerClick:" destination="qSi-w3-KY6" eventType="valueChanged" id="Yru-x8-xtN"/>
-                                </connections>
-                            </stepper>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJl-JX-cDC">
-                                <rect key="frame" x="317" y="44" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4pk-eO-lDq">
-                                <rect key="frame" x="0.0" y="40" width="375" height="667"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wZI-rl-N5m" customClass="PlayerView" customModule="Smash_Up" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
-                                </subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4pk-eO-lDq">
+                                <rect key="frame" x="0.0" y="75" width="375" height="592"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAH-TS-PVC">
+                                <rect key="frame" x="0.0" y="34" width="375" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="addPlayer:" destination="qSi-w3-KY6" eventType="touchUpInside" id="Aka-D5-I2H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="ltf-GN-xW6" secondAttribute="trailing" id="PzT-kd-PG6"/>
-                            <constraint firstItem="ltf-GN-xW6" firstAttribute="leading" secondItem="wAg-m0-cJe" secondAttribute="leadingMargin" id="YuS-BR-wHY"/>
-                            <constraint firstItem="KJl-JX-cDC" firstAttribute="centerY" secondItem="ltf-GN-xW6" secondAttribute="centerY" id="ZaW-tg-F2w"/>
-                            <constraint firstItem="4pk-eO-lDq" firstAttribute="top" secondItem="ltf-GN-xW6" secondAttribute="bottom" constant="20" id="iBe-tk-15v"/>
-                            <constraint firstItem="ltf-GN-xW6" firstAttribute="top" secondItem="53X-hP-JXx" secondAttribute="bottom" constant="20" id="kHf-Or-vNk"/>
-                            <constraint firstItem="KJl-JX-cDC" firstAttribute="trailing" secondItem="ltf-GN-xW6" secondAttribute="trailing" id="qYv-wg-u7K"/>
-                            <constraint firstItem="ltf-GN-xW6" firstAttribute="centerX" secondItem="wAg-m0-cJe" secondAttribute="centerX" id="yeB-HA-O75"/>
-                            <constraint firstItem="4pk-eO-lDq" firstAttribute="width" secondItem="wAg-m0-cJe" secondAttribute="width" id="yfq-G4-9G3"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="adjustPlayers" destination="ltf-GN-xW6" id="OeM-IU-Oyn"/>
-                        <outlet property="howManyPlayers" destination="KJl-JX-cDC" id="OC9-yT-IWS"/>
                         <outlet property="playerList" destination="4pk-eO-lDq" id="9bo-kJ-id9"/>
                     </connections>
                 </viewController>
