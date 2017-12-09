@@ -28,9 +28,15 @@ class Smash_UpUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func addViewInStackview() {
+        
+        let app = XCUIApplication()
+        let button = app.buttons["Button"]
+        button.tap()
+        
+        let element = app.otherElements.containing(.button, identifier:"Button").children(matching: .other).element
+        element.tap()
+        button.tap()
     }
     
 }
