@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		927C3F621F224CFE00233977 /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C3F611F224CFE00233977 /* Randoms.swift */; };
-		927D241D1F601214000C61D8 /* SetupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927D241C1F601214000C61D8 /* SetupTableViewCell.swift */; };
 		929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19D91EB0A77B004EBC43 /* AppDelegate.swift */; };
 		929E19DF1EB0A77B004EBC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929E19DD1EB0A77B004EBC43 /* Main.storyboard */; };
 		929E19E11EB0A77B004EBC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929E19E01EB0A77B004EBC43 /* Assets.xcassets */; };
@@ -19,7 +18,6 @@
 		929E1A001EB0AD58004EBC43 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19FF1EB0AD58004EBC43 /* Game.swift */; };
 		929E1A021EB0B988004EBC43 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E1A011EB0B988004EBC43 /* PlayerView.swift */; };
 		92A7A6601FD8992600E6C628 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7A65F1FD8992600E6C628 /* StackViewController.swift */; };
-		92A7F8F11F19151B0082F8A9 /* SetupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7F8F01F19151B0082F8A9 /* SetupTableViewController.swift */; };
 		92E4B9D91F76722600F7CFD3 /* FactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E4B9D81F76722600F7CFD3 /* FactionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +33,6 @@
 
 /* Begin PBXFileReference section */
 		927C3F611F224CFE00233977 /* Randoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randoms.swift; sourceTree = "<group>"; };
-		927D241C1F601214000C61D8 /* SetupTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupTableViewCell.swift; sourceTree = "<group>"; };
 		92924F161F41B324009CAE97 /* Smash-Up.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Smash-Up.entitlements"; sourceTree = "<group>"; };
 		929E19D61EB0A77B004EBC43 /* Smash-Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smash-Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		929E19D91EB0A77B004EBC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +48,6 @@
 		929E19FF1EB0AD58004EBC43 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		929E1A011EB0B988004EBC43 /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		92A7A65F1FD8992600E6C628 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
-		92A7F8F01F19151B0082F8A9 /* SetupTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupTableViewController.swift; sourceTree = "<group>"; };
 		92E4B9D81F76722600F7CFD3 /* FactionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,8 +135,6 @@
 		929E1A031EB0FC63004EBC43 /* Game Setup */ = {
 			isa = PBXGroup;
 			children = (
-				92A7F8F01F19151B0082F8A9 /* SetupTableViewController.swift */,
-				927D241C1F601214000C61D8 /* SetupTableViewCell.swift */,
 				92A7A65F1FD8992600E6C628 /* StackViewController.swift */,
 			);
 			name = "Game Setup";
@@ -269,8 +263,6 @@
 				929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */,
 				92E4B9D91F76722600F7CFD3 /* FactionTableViewController.swift in Sources */,
 				92A7A6601FD8992600E6C628 /* StackViewController.swift in Sources */,
-				92A7F8F11F19151B0082F8A9 /* SetupTableViewController.swift in Sources */,
-				927D241D1F601214000C61D8 /* SetupTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
