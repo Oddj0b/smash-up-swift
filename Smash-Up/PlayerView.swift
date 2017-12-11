@@ -9,9 +9,21 @@
 import Foundation
 import UIKit
 class PlayerView: UIViewController{
-    @IBOutlet weak var playerName: UILabel!
+    var player = Player()
+    @IBOutlet weak var playerName: UITextField!
     override func viewDidLoad() {
             print("PlayerView loaded")
     }
     
-}
+    func saveName(){
+        print("Saving name")
+        player.name = playerName.text
+        
+    }
+    //MARK: TODO Make this use Player.swift object.
+    //Factions should be a dictionary with faction1 or faction2 as key and selected faction as value.
+    //Then you can delete key:value and insert a new one.
+    @IBAction func selectFaction1(_ sender: Any) {
+        
+    }
+} 

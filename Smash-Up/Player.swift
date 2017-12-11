@@ -9,6 +9,5 @@
 import Foundation
 class Player {
     var name: String?
-    var factions: [String]?
-    
+    var factions: [String:String]?
 }

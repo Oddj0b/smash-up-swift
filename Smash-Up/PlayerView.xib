@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayerView" customModule="Smash_Up" customModuleProvider="target">
             <connections>
-                <outlet property="playerName" destination="Opz-Be-k0Q" id="SvX-vH-efe"/>
+                <outlet property="playerName" destination="so8-uD-J7M" id="h8B-AA-T7b"/>
                 <outlet property="view" destination="iN0-l3-epB" id="0nl-GU-5oE"/>
             </connections>
         </placeholder>
@@ -21,37 +22,40 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opz-Be-k0Q">
-                    <rect key="frame" x="0.0" y="49" width="375" height="714"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter players name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="so8-uD-J7M">
+                    <rect key="frame" x="0.0" y="49" width="375" height="30"/>
                     <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YM2-Jt-JoJ" userLabel="faction2">
-                    <rect key="frame" x="265" y="103" width="95" height="95"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-vO-Tlf" userLabel="faction1">
+                    <rect key="frame" x="10" y="82" width="95" height="95"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="9aA-vO-Tlf" secondAttribute="height" multiplier="1:1" id="Qma-Di-7Ky"/>
+                    </constraints>
                     <state key="normal" title="Select faction"/>
                     <connections>
-                        <action selector="setFaction2:" destination="-1" eventType="touchUpInside" id="yXI-vW-2F1"/>
+                        <action selector="selectFaction1:" destination="-1" eventType="touchUpInside" id="zJY-GL-Zwm"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aA-vO-Tlf" userLabel="faction1">
-                    <rect key="frame" x="15" y="103" width="95" height="95"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YM2-Jt-JoJ" userLabel="faction2">
+                    <rect key="frame" x="270" y="82.333333333333314" width="95" height="95"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="YM2-Jt-JoJ" secondAttribute="height" multiplier="1:1" id="PWD-9f-EQf"/>
+                    </constraints>
                     <state key="normal" title="Select faction"/>
-                    <connections>
-                        <action selector="setFaction1:" destination="-1" eventType="touchUpInside" id="gFf-IZ-cc4"/>
-                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Opz-Be-k0Q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FR6-HJ-hBl"/>
-                <constraint firstItem="Opz-Be-k0Q" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HTG-no-HQ4"/>
-                <constraint firstItem="Opz-Be-k0Q" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TKj-31-cT7"/>
-                <constraint firstItem="Opz-Be-k0Q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VQK-ld-bbg"/>
-                <constraint firstItem="Opz-Be-k0Q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="YL5-5Q-cDD"/>
-                <constraint firstItem="Opz-Be-k0Q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="fEX-tH-iFe"/>
+                <constraint firstItem="9aA-vO-Tlf" firstAttribute="top" secondItem="so8-uD-J7M" secondAttribute="bottom" constant="3" id="5MJ-i1-GEk"/>
+                <constraint firstItem="so8-uD-J7M" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="C6X-Fl-6LK"/>
+                <constraint firstItem="so8-uD-J7M" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="K6h-EW-UYi"/>
+                <constraint firstItem="9aA-vO-Tlf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="KDp-ig-tib"/>
+                <constraint firstItem="so8-uD-J7M" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Pjc-Bm-OzZ"/>
+                <constraint firstItem="YM2-Jt-JoJ" firstAttribute="centerY" secondItem="9aA-vO-Tlf" secondAttribute="centerY" id="eKt-Bd-NJa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="YM2-Jt-JoJ" secondAttribute="trailing" constant="10" id="ou1-EU-I8c"/>
+                <constraint firstItem="so8-uD-J7M" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="w3x-5p-cdO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="33.5" y="55"/>
