@@ -7,7 +7,7 @@
 //
 
 import XCTest
-
+import AppCenterXCUITestExtensions
 class Smash_UpUITests: XCTestCase {
         
     override func setUp() {
