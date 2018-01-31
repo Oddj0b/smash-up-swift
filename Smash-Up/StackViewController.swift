@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 class StackViewController: UIViewController {
     @IBOutlet weak var playerList: UIStackView!
@@ -14,6 +17,11 @@ class StackViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        MSAppCenter.start("ee34b22f-7640-4af6-bbe2-af7e109e9d03", withServices:[
+            MSAnalytics.self,
+            MSCrashes.self
+            ])
+        MSAppCenter.start("ee34b22f-7640-4af6-bbe2-af7e109e9d03", withServices:[ MSAnalytics.self, MSCrashes.self ])
     }
     
     override func didReceiveMemoryWarning() {
