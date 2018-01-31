@@ -1,0 +1,26 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/vsts/agent/2.127.0/work/1/s/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSAbstractLog.h",
+      "line": 3,
+      "symbol": "MSAbstractLog",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vsts/agent/2.127.0/work/1/s/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSEventLog.h",
+      "line": 5,
+      "symbol": "MSEventLog",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/vsts/agent/2.127.0/work/1/s/AppCenter-SDK-Apple/iOS/AppCenterAnalytics.framework/Headers/MSLogWithProperties.h",
+      "line": 5,
+      "symbol": "MSLogWithProperties",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/vsts/agent/2.127.0/work/1/s/AppCenterAnalytics"
+}
