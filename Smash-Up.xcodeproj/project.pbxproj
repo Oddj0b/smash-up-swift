@@ -11,6 +11,9 @@
 		923A006E1FE14A1E00C1B80C /* AppCenterXCUITestExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BED6E41FE136A400C01D5F /* AppCenterXCUITestExtensions.framework */; };
 		927C3F621F224CFE00233977 /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C3F611F224CFE00233977 /* Randoms.swift */; };
 		927EB42720095ABE002C1495 /* AppCenterXCUITestExtensions.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 927EB42620095ABE002C1495 /* AppCenterXCUITestExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		927F022120220F7700D629E0 /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927F021E20220F7700D629E0 /* AppCenterAnalytics.framework */; };
+		927F022220220F7700D629E0 /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927F021F20220F7700D629E0 /* AppCenterCrashes.framework */; };
+		927F022320220F7700D629E0 /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927F022020220F7700D629E0 /* AppCenter.framework */; };
 		929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19D91EB0A77B004EBC43 /* AppDelegate.swift */; };
 		929E19DF1EB0A77B004EBC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929E19DD1EB0A77B004EBC43 /* Main.storyboard */; };
 		929E19E11EB0A77B004EBC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 929E19E01EB0A77B004EBC43 /* Assets.xcassets */; };
@@ -51,6 +54,9 @@
 		9201C6D71FDC9CBF00CFE8AB /* PlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerView.xib; sourceTree = "<group>"; };
 		927C3F611F224CFE00233977 /* Randoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randoms.swift; sourceTree = "<group>"; };
 		927EB42620095ABE002C1495 /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterXCUITestExtensions.framework; path = Carthage/Build/iOS/AppCenterXCUITestExtensions.framework; sourceTree = "<group>"; };
+		927F021E20220F7700D629E0 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = "Smash-Up/Vendor/AppCenterAnalytics.framework"; sourceTree = "<group>"; };
+		927F021F20220F7700D629E0 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = "Smash-Up/Vendor/AppCenterCrashes.framework"; sourceTree = "<group>"; };
+		927F022020220F7700D629E0 /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenter.framework; path = "Smash-Up/Vendor/AppCenter.framework"; sourceTree = "<group>"; };
 		92924F161F41B324009CAE97 /* Smash-Up.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Smash-Up.entitlements"; sourceTree = "<group>"; };
 		929E19D61EB0A77B004EBC43 /* Smash-Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smash-Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		929E19D91EB0A77B004EBC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +81,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				927F022120220F7700D629E0 /* AppCenterAnalytics.framework in Frameworks */,
+				927F022320220F7700D629E0 /* AppCenter.framework in Frameworks */,
+				927F022220220F7700D629E0 /* AppCenterCrashes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +101,10 @@
 		924588D81F6752DA0094F6C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				927EB42620095ABE002C1495 /* AppCenterXCUITestExtensions.framework */,
+				927F022020220F7700D629E0 /* AppCenter.framework */,
+				927F021E20220F7700D629E0 /* AppCenterAnalytics.framework */,
+				927F021F20220F7700D629E0 /* AppCenterCrashes.framework */,
 				92BED6E41FE136A400C01D5F /* AppCenterXCUITestExtensions.framework */,
 			);
 			name = Frameworks;
@@ -108,7 +121,6 @@
 		929E19CD1EB0A77B004EBC43 = {
 			isa = PBXGroup;
 			children = (
-				927EB42620095ABE002C1495 /* AppCenterXCUITestExtensions.framework */,
 				929E19D81EB0A77B004EBC43 /* Smash-Up */,
 				929E19ED1EB0A77B004EBC43 /* Smash-UpUITests */,
 				929E19D71EB0A77B004EBC43 /* Products */,
@@ -440,6 +452,10 @@
 				CODE_SIGN_ENTITLEMENTS = "Smash-Up/Smash-Up.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = T2TBC34KR3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Smash-Up/Vendor",
+				);
 				INFOPLIST_FILE = "Smash-Up/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -459,6 +475,10 @@
 				CODE_SIGN_ENTITLEMENTS = "Smash-Up/Smash-Up.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = T2TBC34KR3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Smash-Up/Vendor",
+				);
 				INFOPLIST_FILE = "Smash-Up/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
