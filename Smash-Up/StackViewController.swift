@@ -21,7 +21,6 @@ class StackViewController: UIViewController {
             MSAnalytics.self,
             MSCrashes.self
             ])
-        MSAppCenter.start("ee34b22f-7640-4af6-bbe2-af7e109e9d03", withServices:[ MSAnalytics.self, MSCrashes.self ])
     }
     
     override func didReceiveMemoryWarning() {
