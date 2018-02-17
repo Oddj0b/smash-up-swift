@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9201C6D81FDC9CBF00CFE8AB /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9201C6D71FDC9CBF00CFE8AB /* PlayerView.xib */; };
-		9234E1FF202244430074B95A /* AppCenterXCUITestExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9234E1FE202244430074B95A /* AppCenterXCUITestExtensions.framework */; };
 		923A006E1FE14A1E00C1B80C /* AppCenterXCUITestExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BED6E41FE136A400C01D5F /* AppCenterXCUITestExtensions.framework */; };
 		927C3F621F224CFE00233977 /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C3F611F224CFE00233977 /* Randoms.swift */; };
 		927EB42720095ABE002C1495 /* AppCenterXCUITestExtensions.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 927EB42620095ABE002C1495 /* AppCenterXCUITestExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -83,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9234E1FF202244430074B95A /* AppCenterXCUITestExtensions.framework in Frameworks */,
 				927F022120220F7700D629E0 /* AppCenterAnalytics.framework in Frameworks */,
 				927F022320220F7700D629E0 /* AppCenter.framework in Frameworks */,
 				927F022220220F7700D629E0 /* AppCenterCrashes.framework in Frameworks */,
