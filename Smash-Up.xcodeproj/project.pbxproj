@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9201C6D81FDC9CBF00CFE8AB /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9201C6D71FDC9CBF00CFE8AB /* PlayerView.xib */; };
+		9234E1FF202244430074B95A /* AppCenterXCUITestExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9234E1FE202244430074B95A /* AppCenterXCUITestExtensions.framework */; };
 		923A006E1FE14A1E00C1B80C /* AppCenterXCUITestExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BED6E41FE136A400C01D5F /* AppCenterXCUITestExtensions.framework */; };
 		927C3F621F224CFE00233977 /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C3F611F224CFE00233977 /* Randoms.swift */; };
 		927EB42720095ABE002C1495 /* AppCenterXCUITestExtensions.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 927EB42620095ABE002C1495 /* AppCenterXCUITestExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		9201C6D71FDC9CBF00CFE8AB /* PlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerView.xib; sourceTree = "<group>"; };
+		9234E1FE202244430074B95A /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterXCUITestExtensions.framework; path = Carthage/Build/iOS/AppCenterXCUITestExtensions.framework; sourceTree = "<group>"; };
 		927C3F611F224CFE00233977 /* Randoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randoms.swift; sourceTree = "<group>"; };
 		927EB42620095ABE002C1495 /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterXCUITestExtensions.framework; path = Carthage/Build/iOS/AppCenterXCUITestExtensions.framework; sourceTree = "<group>"; };
 		927F021E20220F7700D629E0 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = "Smash-Up/Vendor/AppCenterAnalytics.framework"; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9234E1FF202244430074B95A /* AppCenterXCUITestExtensions.framework in Frameworks */,
 				927F022120220F7700D629E0 /* AppCenterAnalytics.framework in Frameworks */,
 				927F022320220F7700D629E0 /* AppCenter.framework in Frameworks */,
 				927F022220220F7700D629E0 /* AppCenterCrashes.framework in Frameworks */,
@@ -105,6 +108,7 @@
 				927F022020220F7700D629E0 /* AppCenter.framework */,
 				927F021E20220F7700D629E0 /* AppCenterAnalytics.framework */,
 				927F021F20220F7700D629E0 /* AppCenterCrashes.framework */,
+				9234E1FE202244430074B95A /* AppCenterXCUITestExtensions.framework */,
 				92BED6E41FE136A400C01D5F /* AppCenterXCUITestExtensions.framework */,
 			);
 			name = Frameworks;
@@ -455,6 +459,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Smash-Up/Vendor",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Smash-Up/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -478,6 +483,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Smash-Up/Vendor",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Smash-Up/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
