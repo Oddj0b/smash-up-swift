@@ -28,7 +28,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAH-TS-PVC">
                                 <rect key="frame" x="0.0" y="34" width="375" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Add Player"/>
                                 <connections>
                                     <action selector="addPlayer:" destination="qSi-w3-KY6" eventType="touchUpInside" id="Aka-D5-I2H"/>
                                 </connections>
@@ -37,6 +37,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
+                        <outlet property="addPlayerBtn" destination="TAH-TS-PVC" id="wiA-iF-XXj"/>
                         <outlet property="playerList" destination="4pk-eO-lDq" id="9bo-kJ-id9"/>
                     </connections>
                 </viewController>

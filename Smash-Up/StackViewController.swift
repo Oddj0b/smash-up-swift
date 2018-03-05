@@ -12,7 +12,9 @@ import AppCenterAnalytics
 import AppCenterCrashes
 
 class StackViewController: UIViewController {
+    var players : UInt = 0
     @IBOutlet weak var playerList: UIStackView!
+    @IBOutlet weak var addPlayerBtn: UIButton!
     
     
     override func viewDidLoad() {
@@ -28,9 +30,17 @@ class StackViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func howManyPlayers(){
+        if playerList.arrangedSubviews.count == 4{
+            addPlayerBtn.isEnabled = false
+        } else{
+            addPlayerBtn.isEnabled = true
+        }
+    }
     @IBAction func addPlayer(_ sender: Any) {
         let playerView = PlayerView()
         playerList.addArrangedSubview(playerView.view)
+        howManyPlayers()
     }
     
 }
