@@ -8,22 +8,13 @@
 
 import UIKit
 
-class FactionTableViewController: UITableViewController {
+class FactionTableViewController: UITableViewController{
     var factions: [String] = ["Pirates", "Robots", "Aliens", "Ninjas", "Tricksters", "Zombies"]
     var expansions: [String] = ["Base game", "It's your fault", "Obligatory Cthulhu expansion"]
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
         self.tableView.delegate = self
-//        let robots = Faction()
-//        robots.name = "Robots"
-//        robots.expansion = "Base Game"
-//        factions.append(robots)
-//
-//        let pirates = Faction()
-//        pirates.name = "Pirates"
-//        pirates.expansion = "Base Games"
-//        factions.append(pirates)
     }
 
     override func didReceiveMemoryWarning() {
