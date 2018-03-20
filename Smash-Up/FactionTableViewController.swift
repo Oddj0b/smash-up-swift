@@ -10,7 +10,7 @@ import UIKit
 
 class FactionTableViewController: UITableViewController{
     var factions: [String] = ["Pirates", "Robots", "Aliens", "Ninjas", "Tricksters", "Zombies"]
-    var expansions: [String] = ["Base game", "It's your fault", "Obligatory Cthulhu expansion"]
+    //var expansions: [String] = ["Base game", "It's your fault", "Obligatory Cthulhu expansion"]
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
@@ -40,4 +40,5 @@ class FactionTableViewController: UITableViewController{
         
      return cell
     }
+    
 }
