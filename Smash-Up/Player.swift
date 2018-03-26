@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Player {
-    var name: String?
-    var factions: [String:String]?
+struct Player {
+    let playerName: String
+    let playerFactions: [String:String]
 }

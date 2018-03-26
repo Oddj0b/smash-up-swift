@@ -10,15 +10,14 @@ import UIKit
 
 
 class PlayerView: UIView {
-//    let player = Player()
-//    let name = player.name
-//    let factions = player.factions
-    
     //TODO: Implement init with constraints
     
     @IBAction func setName(_ sender: Any) {
+        
     }
     @IBAction func selectFaction1(_ sender: Any) {
+        let factionTable = FactionTableViewController()
+        
     }
     @IBAction func selectFaction2(_ sender: Any) {
     }

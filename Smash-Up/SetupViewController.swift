@@ -9,11 +9,20 @@
 import UIKit
 
 class SetupViewController: UIViewController {
+    @IBOutlet weak var addPlayerButton: UIButton!
+    @IBOutlet weak var player1: PlayerView!
+    @IBOutlet weak var player2: PlayerView!
+    @IBOutlet weak var player3: PlayerView!
+    @IBOutlet weak var player4: PlayerView!
     @IBOutlet weak var playerStackView: UIStackView!
+    var numberOfPlayers:Int = 2
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        
+        showPlayer(playerNumber: numberOfPlayers)
     }
     
     
@@ -21,23 +30,29 @@ class SetupViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func addPlayer(_ sender: UIButton) {
-        let pv = PlayerView()
-        //playerStackView.insertArrangedSubview(pv, at: 0)
-        playerStackView.addArrangedSubview(pv)
-        print(playerStackView.arrangedSubviews.count)
-        
+    func moreThanFourPlyers(){
+        if numberOfPlayers >= 4{
+            print("All seats have been taken")
+            addPlayerButton.isUserInteractionEnabled = false
+        }else{
+            print("Room for \(4 - numberOfPlayers) more players")
+        }
     }
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+    func showPlayer(playerNumber:Int){
+        switch numberOfPlayers {
+        case 3:
+            player3.isHidden = false
+        case 4:
+            player4.isHidden = false
+        default:
+            player3.isHidden = true
+            player4.isHidden = true
+        }
+    }
+    @IBAction func addPlayer(_ sender: UIButton) {
+        numberOfPlayers += 1
+        moreThanFourPlyers()
+        print("Number of players in lobby: ", numberOfPlayers)
+        showPlayer(playerNumber: numberOfPlayers)
+    }
 }
