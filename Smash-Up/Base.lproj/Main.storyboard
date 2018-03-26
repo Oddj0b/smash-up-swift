@@ -125,7 +125,7 @@
                                                     <action selector="setName:" destination="N22-ng-o9y" eventType="editingDidEnd" id="kVX-UM-C2Q"/>
                                                 </connections>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpd-vP-WnM" userLabel="1st Faction">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpd-vP-WnM" userLabel="1st Faction">
                                                 <rect key="frame" x="49" y="40" width="75" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="Y0w-f6-3t3"/>
@@ -136,7 +136,7 @@
                                                     <action selector="selectFaction2:" destination="N22-ng-o9y" eventType="touchUpInside" id="lUk-Vd-3by"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06H-bu-MtE" userLabel="2nd faction">
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06H-bu-MtE" userLabel="2nd faction">
                                                 <rect key="frame" x="210" y="40" width="75" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="Kfj-Mf-Wqt"/>
@@ -175,8 +175,8 @@
                                                     <action selector="setName:" destination="N22-ng-o9y" eventType="editingDidEnd" id="Eqk-rv-g2r"/>
                                                 </connections>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz6-G2-leL" userLabel="1st Faction">
-                                                <rect key="frame" x="35" y="40" width="75" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz6-G2-leL" userLabel="1st Faction">
+                                                <rect key="frame" x="100" y="40" width="75" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="75" id="UMa-D1-fAR"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="u8E-mc-rRM"/>
@@ -186,8 +186,8 @@
                                                     <action selector="selectFaction2:" destination="N22-ng-o9y" eventType="touchUpInside" id="Ito-Xo-hcv"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDO-SM-iNe" userLabel="2nd faction">
-                                                <rect key="frame" x="145" y="17.5" width="75" height="75"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDO-SM-iNe" userLabel="2nd faction">
+                                                <rect key="frame" x="210" y="17.5" width="75" height="75"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="75" id="nRY-3q-WNW"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="tZr-bm-9xC"/>
@@ -273,8 +273,8 @@
                                                     <action selector="setName:" destination="N22-ng-o9y" eventType="editingDidEnd" id="WyW-Zt-DL1"/>
                                                 </connections>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8N3-Uk-JZI" userLabel="1st Faction">
-                                                <rect key="frame" x="129" y="40" width="75" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8N3-Uk-JZI" userLabel="1st Faction">
+                                                <rect key="frame" x="129" y="40" width="46" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="smp-1n-8jB"/>
                                                     <constraint firstAttribute="width" constant="75" id="ur2-RS-o8t"/>
@@ -285,7 +285,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMe-4v-c11" userLabel="2nd faction">
-                                                <rect key="frame" x="239" y="35" width="46" height="75"/>
+                                                <rect key="frame" x="210" y="35" width="75" height="75"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="WZJ-dN-mVI"/>
                                                     <constraint firstAttribute="width" constant="75" id="oVa-ap-rxh"/>
@@ -309,6 +309,16 @@
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nQm-ie-Z6M" secondAttribute="trailing" id="1Ly-Xq-IBn"/>
+                                    <constraint firstAttribute="trailing" secondItem="inw-dT-ZZF" secondAttribute="trailing" id="GuL-f2-c5b"/>
+                                    <constraint firstItem="4r0-1L-W2G" firstAttribute="leading" secondItem="FlT-Cc-CMn" secondAttribute="leading" id="JlU-FK-8m8"/>
+                                    <constraint firstItem="nQm-ie-Z6M" firstAttribute="leading" secondItem="FlT-Cc-CMn" secondAttribute="leading" id="RSD-3G-PNc"/>
+                                    <constraint firstItem="inw-dT-ZZF" firstAttribute="leading" secondItem="FlT-Cc-CMn" secondAttribute="leading" id="dx1-3U-9ZZ"/>
+                                    <constraint firstItem="S2N-RZ-r8d" firstAttribute="leading" secondItem="FlT-Cc-CMn" secondAttribute="leading" id="f5a-eu-3kA"/>
+                                    <constraint firstAttribute="trailing" secondItem="4r0-1L-W2G" secondAttribute="trailing" id="jxO-rc-9rM"/>
+                                    <constraint firstAttribute="trailing" secondItem="S2N-RZ-r8d" secondAttribute="trailing" id="mNZ-ix-3w9"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oeI-OT-fIi" userLabel="Start game">
                                 <rect key="frame" x="16" y="430" width="288" height="30"/>
