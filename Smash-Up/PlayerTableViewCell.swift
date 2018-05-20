@@ -11,6 +11,8 @@ import UIKit
 class PlayerTableViewCell: UITableViewCell {
     //MARK: Properties
     @IBOutlet weak var playerNameTextField: UITextField!
+    @IBOutlet weak var faction1: UIImageView!
+    @IBOutlet weak var faction2: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
