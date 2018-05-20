@@ -9,10 +9,16 @@
 import Foundation
 class Player{
     var playerName: String
-    var playerFactions: [String:String]
+    var faction1: String
+    var faction2: String
     
-    init(playerName: String, playerFactions: [String:String]){
+    init?(playerName: String, faction1: String, faction2: String){
+        
+        if playerName.isEmpty {
+            return nil
+        }
         self.playerName = playerName
-        self.playerFactions = playerFactions
+        self.faction1 = faction1
+        self.faction2 = faction2
     }
 }

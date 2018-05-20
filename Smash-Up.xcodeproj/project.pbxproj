@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		921AB55420B1E8110068F467 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */; };
 		923A006E1FE14A1E00C1B80C /* AppCenterXCUITestExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92BED6E41FE136A400C01D5F /* AppCenterXCUITestExtensions.framework */; };
 		927C3F621F224CFE00233977 /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C3F611F224CFE00233977 /* Randoms.swift */; };
 		927EB42720095ABE002C1495 /* AppCenterXCUITestExtensions.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 927EB42620095ABE002C1495 /* AppCenterXCUITestExtensions.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -22,7 +23,7 @@
 		929E19FC1EB0A89B004EBC43 /* Faction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19FB1EB0A89B004EBC43 /* Faction.swift */; };
 		929E1A001EB0AD58004EBC43 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19FF1EB0AD58004EBC43 /* Game.swift */; };
 		92C5FBFA2060027D003E3B74 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C5FBF92060027D003E3B74 /* GameViewController.swift */; };
-		92C5FC002060110A003E3B74 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C5FBFF2060110A003E3B74 /* SetupViewController.swift */; };
+		92C5FC002060110A003E3B74 /* SetupTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C5FBFF2060110A003E3B74 /* SetupTableViewController.swift */; };
 		92E4B9D91F76722600F7CFD3 /* FactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E4B9D81F76722600F7CFD3 /* FactionTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
 		9234E1FE202244430074B95A /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterXCUITestExtensions.framework; path = Carthage/Build/iOS/AppCenterXCUITestExtensions.framework; sourceTree = "<group>"; };
 		927C3F611F224CFE00233977 /* Randoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randoms.swift; sourceTree = "<group>"; };
 		927EB42620095ABE002C1495 /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterXCUITestExtensions.framework; path = Carthage/Build/iOS/AppCenterXCUITestExtensions.framework; sourceTree = "<group>"; };
@@ -71,7 +73,7 @@
 		929E19FF1EB0AD58004EBC43 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		92BED6E41FE136A400C01D5F /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterXCUITestExtensions.framework; path = Carthage/Build/iOS/AppCenterXCUITestExtensions.framework; sourceTree = "<group>"; };
 		92C5FBF92060027D003E3B74 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		92C5FBFF2060110A003E3B74 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupViewController.swift; sourceTree = "<group>"; };
+		92C5FBFF2060110A003E3B74 /* SetupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupTableViewController.swift; sourceTree = "<group>"; };
 		92E4B9D81F76722600F7CFD3 /* FactionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -169,7 +171,8 @@
 		929E1A031EB0FC63004EBC43 /* Game Setup */ = {
 			isa = PBXGroup;
 			children = (
-				92C5FBFF2060110A003E3B74 /* SetupViewController.swift */,
+				92C5FBFF2060110A003E3B74 /* SetupTableViewController.swift */,
+				921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */,
 			);
 			name = "Game Setup";
 			sourceTree = "<group>";
@@ -293,8 +296,9 @@
 				929E19FC1EB0A89B004EBC43 /* Faction.swift in Sources */,
 				927C3F621F224CFE00233977 /* Randoms.swift in Sources */,
 				929E19FA1EB0A807004EBC43 /* Player.swift in Sources */,
-				92C5FC002060110A003E3B74 /* SetupViewController.swift in Sources */,
+				92C5FC002060110A003E3B74 /* SetupTableViewController.swift in Sources */,
 				92C5FBFA2060027D003E3B74 /* GameViewController.swift in Sources */,
+				921AB55420B1E8110068F467 /* PlayerTableViewCell.swift in Sources */,
 				929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */,
 				92E4B9D91F76722600F7CFD3 /* FactionTableViewController.swift in Sources */,
 			);
