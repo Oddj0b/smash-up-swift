@@ -10,11 +10,6 @@ import UIKit
 
 class SetupViewController: UIViewController {
     @IBOutlet weak var addPlayerButton: UIButton!
-    @IBOutlet weak var player1: PlayerViewController!
-    @IBOutlet weak var player2: PlayerViewController!
-    @IBOutlet weak var player3: PlayerViewController!
-    @IBOutlet weak var player4: PlayerViewController!
-    @IBOutlet weak var playerStackView: UIStackView!
     var numberOfPlayers:Int = 2
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +17,7 @@ class SetupViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
-        showPlayer(playerNumber: numberOfPlayers)
+//        showPlayer(playerNumber: numberOfPlayers)
     }
     
     
@@ -38,21 +33,21 @@ class SetupViewController: UIViewController {
             print("Room for \(4 - numberOfPlayers) more players")
         }
     }
-    func showPlayer(playerNumber:Int){
-        switch numberOfPlayers {
-        case 3:
-            player3.isHidden = false
-        case 4:
-            player4.isHidden = false
-        default:
-            player3.isHidden = true
-            player4.isHidden = true
-        }
-    }
-    @IBAction func addPlayer(_ sender: UIButton) {
-        numberOfPlayers += 1
-        moreThanFourPlyers()
-        print("Number of players in lobby: ", numberOfPlayers)
-        showPlayer(playerNumber: numberOfPlayers)
-    }
+//    func showPlayer(playerNumber:Int){
+//        switch numberOfPlayers {
+//        case 3:
+//            player3.isHidden = false
+//        case 4:
+//            player4.isHidden = false
+//        default:
+//            player3.isHidden = true
+//            player4.isHidden = true
+//        }
+//    }
+//    @IBAction func addPlayer(_ sender: UIButton) {
+//        numberOfPlayers += 1
+//        moreThanFourPlyers()
+//        print("Number of players in lobby: ", numberOfPlayers)
+//        showPlayer(playerNumber: numberOfPlayers)
+//    }
 }
