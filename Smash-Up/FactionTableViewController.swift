@@ -46,5 +46,4 @@ class FactionTableViewController: UITableViewController{
         cell.imageView?.image = UIImage(named: factionName)
         return cell
     }
-    
 }

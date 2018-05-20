@@ -7,7 +7,12 @@
 //
 
 import Foundation
-struct Player {
-    let playerName: String
-    let playerFactions: [String:String]
+class Player{
+    var playerName: String
+    var playerFactions: [String:String]
+    
+    init(playerName: String, playerFactions: [String:String]){
+        self.playerName = playerName
+        self.playerFactions = playerFactions
+    }
 }

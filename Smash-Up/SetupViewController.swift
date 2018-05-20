@@ -10,10 +10,10 @@ import UIKit
 
 class SetupViewController: UIViewController {
     @IBOutlet weak var addPlayerButton: UIButton!
-    @IBOutlet weak var player1: PlayerView!
-    @IBOutlet weak var player2: PlayerView!
-    @IBOutlet weak var player3: PlayerView!
-    @IBOutlet weak var player4: PlayerView!
+    @IBOutlet weak var player1: PlayerViewController!
+    @IBOutlet weak var player2: PlayerViewController!
+    @IBOutlet weak var player3: PlayerViewController!
+    @IBOutlet weak var player4: PlayerViewController!
     @IBOutlet weak var playerStackView: UIStackView!
     var numberOfPlayers:Int = 2
     override func viewDidLoad() {

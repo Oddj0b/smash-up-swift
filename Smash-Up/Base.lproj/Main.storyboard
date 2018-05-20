@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1IW-5h-W5H">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1IW-5h-W5H">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -123,6 +123,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
                                                     <action selector="setName:" destination="N22-ng-o9y" eventType="editingDidEnd" id="kVX-UM-C2Q"/>
+                                                    <action selector="setName:" destination="inw-dT-ZZF" eventType="editingDidEnd" id="z7m-1i-ZXh"/>
                                                 </connections>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpd-vP-WnM" userLabel="1st Faction">
@@ -133,7 +134,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
-                                                    <action selector="selectFaction2:" destination="N22-ng-o9y" eventType="touchUpInside" id="lUk-Vd-3by"/>
+                                                    <action selector="selectFaction1:" destination="N22-ng-o9y" eventType="touchUpInside" id="axv-iC-rlu"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06H-bu-MtE" userLabel="2nd faction">
@@ -144,7 +145,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
-                                                    <action selector="selectFaction1:" destination="N22-ng-o9y" eventType="touchUpInside" id="czW-lc-NYp"/>
+                                                    <action selector="selectFaction2:" destination="N22-ng-o9y" eventType="touchUpInside" id="mqt-tO-0Qa"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -153,7 +154,7 @@
                                             <constraint firstItem="jdX-Qd-3hh" firstAttribute="leading" secondItem="inw-dT-ZZF" secondAttribute="leading" constant="5" id="2DZ-Ab-THz"/>
                                             <constraint firstItem="Xpd-vP-WnM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="inw-dT-ZZF" secondAttribute="leading" constant="35" id="5xf-yh-Zav"/>
                                             <constraint firstItem="06H-bu-MtE" firstAttribute="centerY" secondItem="Xpd-vP-WnM" secondAttribute="centerY" id="6fU-Ox-Wam"/>
-                                            <constraint firstItem="06H-bu-MtE" firstAttribute="leading" secondItem="Xpd-vP-WnM" secondAttribute="trailing" constant="86" id="Olm-Vx-jt2"/>
+                                            <constraint firstItem="06H-bu-MtE" firstAttribute="leading" secondItem="Xpd-vP-WnM" secondAttribute="trailing" constant="85" id="Olm-Vx-jt2"/>
                                             <constraint firstItem="jdX-Qd-3hh" firstAttribute="top" secondItem="inw-dT-ZZF" secondAttribute="top" constant="5" id="UVa-w6-L3R"/>
                                             <constraint firstItem="Xpd-vP-WnM" firstAttribute="top" secondItem="jdX-Qd-3hh" secondAttribute="bottom" constant="5" id="fAf-G1-vQi"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="06H-bu-MtE" secondAttribute="trailing" constant="35" id="kFO-Aa-QdI"/>
@@ -175,26 +176,26 @@
                                                     <action selector="setName:" destination="N22-ng-o9y" eventType="editingDidEnd" id="Eqk-rv-g2r"/>
                                                 </connections>
                                             </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz6-G2-leL" userLabel="1st Faction">
-                                                <rect key="frame" x="100" y="40" width="75" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDO-SM-iNe" userLabel="2nd faction">
+                                                <rect key="frame" x="210" y="40" width="75" height="30"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="75" id="UMa-D1-fAR"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="nRY-3q-WNW"/>
+                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="tZr-bm-9xC"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="selectFaction1:" destination="N22-ng-o9y" eventType="touchUpInside" id="j3L-uL-GBp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz6-G2-leL" userLabel="1st Faction">
+                                                <rect key="frame" x="44" y="40" width="75" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="UMa-D1-fAR"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="u8E-mc-rRM"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="selectFaction2:" destination="N22-ng-o9y" eventType="touchUpInside" id="Ito-Xo-hcv"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDO-SM-iNe" userLabel="2nd faction">
-                                                <rect key="frame" x="210" y="17.5" width="75" height="75"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="75" id="nRY-3q-WNW"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="tZr-bm-9xC"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <connections>
-                                                    <action selector="selectFaction1:" destination="N22-ng-o9y" eventType="touchUpInside" id="j3L-uL-GBp"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -205,7 +206,7 @@
                                             <constraint firstItem="sz6-G2-leL" firstAttribute="top" secondItem="EJv-CQ-ohg" secondAttribute="bottom" constant="5" id="L0W-n3-KMX"/>
                                             <constraint firstItem="EJv-CQ-ohg" firstAttribute="leading" secondItem="4r0-1L-W2G" secondAttribute="leading" constant="5" id="aXs-YB-a6K"/>
                                             <constraint firstItem="EDO-SM-iNe" firstAttribute="centerY" secondItem="sz6-G2-leL" secondAttribute="centerY" id="ajo-01-TKy"/>
-                                            <constraint firstItem="EDO-SM-iNe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sz6-G2-leL" secondAttribute="trailing" constant="35" id="dTt-XL-PsU"/>
+                                            <constraint firstItem="EDO-SM-iNe" firstAttribute="leading" secondItem="sz6-G2-leL" secondAttribute="trailing" constant="85" id="dTt-XL-PsU"/>
                                             <constraint firstItem="sz6-G2-leL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4r0-1L-W2G" secondAttribute="leading" constant="35" id="hsh-jh-XxT"/>
                                             <constraint firstItem="EJv-CQ-ohg" firstAttribute="top" secondItem="4r0-1L-W2G" secondAttribute="top" constant="5" id="jbd-YP-qH7"/>
                                         </constraints>
@@ -237,7 +238,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9V-EG-YgW" userLabel="2nd faction">
-                                                <rect key="frame" x="237" y="29" width="75" height="75"/>
+                                                <rect key="frame" x="237" y="40" width="75" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="QSp-OY-ULI"/>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="z4D-Y9-r13"/>
@@ -253,8 +254,10 @@
                                             <constraint firstItem="UjP-MU-36X" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="S2N-RZ-r8d" secondAttribute="leading" constant="35" id="6Ue-yM-ohW"/>
                                             <constraint firstAttribute="trailing" secondItem="0lv-Kl-ZNP" secondAttribute="trailing" constant="5" id="TWo-TE-YfA"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="s9V-EG-YgW" secondAttribute="trailing" constant="35" id="UaX-e6-5Xe"/>
+                                            <constraint firstItem="UjP-MU-36X" firstAttribute="centerY" secondItem="s9V-EG-YgW" secondAttribute="centerY" id="Z8J-fd-35d"/>
+                                            <constraint firstItem="s9V-EG-YgW" firstAttribute="leading" secondItem="UjP-MU-36X" secondAttribute="trailing" constant="85" id="Zwz-fx-hd1"/>
                                             <constraint firstItem="0lv-Kl-ZNP" firstAttribute="leading" secondItem="S2N-RZ-r8d" secondAttribute="leading" constant="5" id="dFZ-Ef-VJc"/>
-                                            <constraint firstItem="UjP-MU-36X" firstAttribute="top" secondItem="0lv-Kl-ZNP" secondAttribute="bottom" constant="5" id="vAw-u2-Lag"/>
+                                            <constraint firstItem="UjP-MU-36X" firstAttribute="top" secondItem="0lv-Kl-ZNP" secondAttribute="bottom" constant="5" id="f8n-Ve-LBv"/>
                                             <constraint firstItem="0lv-Kl-ZNP" firstAttribute="top" secondItem="S2N-RZ-r8d" secondAttribute="top" constant="5" id="zgq-vW-FXu"/>
                                         </constraints>
                                     </view>
@@ -277,7 +280,7 @@
                                                 <rect key="frame" x="129" y="40" width="46" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="smp-1n-8jB"/>
-                                                    <constraint firstAttribute="width" constant="75" id="ur2-RS-o8t"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="ur2-RS-o8t"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
@@ -285,10 +288,10 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMe-4v-c11" userLabel="2nd faction">
-                                                <rect key="frame" x="210" y="35" width="75" height="75"/>
+                                                <rect key="frame" x="210" y="40" width="75" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="WZJ-dN-mVI"/>
-                                                    <constraint firstAttribute="width" constant="75" id="oVa-ap-rxh"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="75" id="oVa-ap-rxh"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
@@ -303,9 +306,9 @@
                                             <constraint firstItem="o2V-5L-V4b" firstAttribute="top" secondItem="nQm-ie-Z6M" secondAttribute="top" constant="5" id="PYl-df-sKQ"/>
                                             <constraint firstAttribute="trailing" secondItem="o2V-5L-V4b" secondAttribute="trailing" constant="5" id="XfU-Ci-dYi"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZMe-4v-c11" secondAttribute="trailing" constant="35" id="cf6-1T-QXC"/>
-                                            <constraint firstItem="ZMe-4v-c11" firstAttribute="centerX" secondItem="8N3-Uk-JZI" secondAttribute="centerX" id="gbp-sP-RRc"/>
                                             <constraint firstItem="o2V-5L-V4b" firstAttribute="leading" secondItem="nQm-ie-Z6M" secondAttribute="leading" constant="5" id="oxT-i5-IO1"/>
-                                            <constraint firstItem="ZMe-4v-c11" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8N3-Uk-JZI" secondAttribute="trailing" constant="35" id="wIr-mf-Saj"/>
+                                            <constraint firstItem="8N3-Uk-JZI" firstAttribute="centerY" secondItem="ZMe-4v-c11" secondAttribute="centerY" id="trp-k6-T0T"/>
+                                            <constraint firstItem="ZMe-4v-c11" firstAttribute="leading" secondItem="8N3-Uk-JZI" secondAttribute="trailing" constant="85" id="wIr-mf-Saj"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -353,6 +356,7 @@
                         <outlet property="player2" destination="4r0-1L-W2G" id="Ke8-lm-oqX"/>
                         <outlet property="player3" destination="S2N-RZ-r8d" id="ggZ-UX-2sP"/>
                         <outlet property="player4" destination="nQm-ie-Z6M" id="c8r-zP-ci1"/>
+                        <outlet property="playerStackView" destination="FlT-Cc-CMn" id="Nc7-87-ZcM"/>
                         <segue destination="Lmg-FX-qra" kind="show" identifier="selectFaction" id="UHj-AP-dWm"/>
                     </connections>
                 </viewController>
