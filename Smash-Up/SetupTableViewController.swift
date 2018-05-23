@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import os.log
+protocol factionSegueDelegator {
+    func callSegueFromCell(playerData dataObject: Player)
+}
 
 class SetupTableViewController: UITableViewController {
     //MARK: Properties
     @IBOutlet weak var addPlayerButton: UIButton!
-    var numberOfPlayers:Int = 2
+    //var numberOfPlayers:Int = 2
     
     var players = [Player]()
     
@@ -43,15 +47,18 @@ class SetupTableViewController: UITableViewController {
         cell.playerNameTextField.text = player.playerName
         return cell
     }
-
-    func moreThanFourPlyers(){
-        if numberOfPlayers >= 4{
-            print("All seats have been taken")
-            addPlayerButton.isUserInteractionEnabled = false
-        }else{
-            print("Room for \(4 - numberOfPlayers) more players")
-        }
+    
+    func callSegueFromCell(playerData dataObject: Player){
+        self.performSegue(withIdentifier: "selectFaction1", sender: dataObject)
     }
+//    func moreThanFourPlyers(){
+//        if numberOfPlayers >= 4{
+//            print("All seats have been taken")
+//            addPlayerButton.isUserInteractionEnabled = false
+//        }else{
+//            print("Room for \(4 - numberOfPlayers) more players")
+//        }
+//    }
     
     
     //MARK: Helpers
@@ -68,4 +75,5 @@ class SetupTableViewController: UITableViewController {
         }
         players += [player1, player2, player3]
     }
+    @IBAction func unwindToSetupTableVC(segue:UIStoryboardSegue) { }
 }

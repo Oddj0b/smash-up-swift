@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import os.log
 
 class FactionTableViewController: UITableViewController{
     let factions:[[String]] = [["Pirates", "Robots", "Aliens", "Ninjas", "Tricksters", "Zombies"],
-                               ["Dragons","Mythinc Geeks","Sharks", "Tornadoes", "Superheroes"]]
-    let expansions: [String] = ["Base game", "It's your fault"] //, "Obligatory Cthulhu expansion"]
+                               ["Dragons","Mythinc Geeks","Sharks", "Tornadoes", "Superheroes"], ["Cthulhu Cultist", "Elder things", "Innsmouth", "Miskatonic university"]]
+    let expansions: [String] = ["Base game", "It's your fault", "Obligatory Cthulhu expansion"]
+    var selectedFaction: Faction!
+    var selectedFactionName: String!
+    var selectedExpansionName: String!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.dataSource = self
@@ -36,7 +40,12 @@ class FactionTableViewController: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("\(factions[indexPath.section][indexPath.row])")
+        selectedFactionName = factions[indexPath.section][indexPath.row]
+        selectedExpansionName = expansions[indexPath.section]
+        print("\(selectedFactionName)")
+        
+        performSegue(withIdentifier: "unwindToSetupTableVC", sender: self)
+        
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -45,5 +54,9 @@ class FactionTableViewController: UITableViewController{
         cell.textLabel?.text = factionName
         cell.imageView?.image = UIImage(named: factionName)
         return cell
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        selectedFaction = Faction(factionName: selectedFactionName, factionExpansion: selectedExpansionName)
     }
 }
