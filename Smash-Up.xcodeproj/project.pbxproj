@@ -500,7 +500,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ribeyestudios.Smash-Up";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "75d4cfae-3eb0-44ab-8900-6d2a69f15f1c";
+				PROVISIONING_PROFILE = "1d25f0fd-5421-4552-8230-e6b2be29984d";
 				PROVISIONING_PROFILE_SPECIFIER = "distribution.smash-up";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
