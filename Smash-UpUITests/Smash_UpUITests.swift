@@ -26,10 +26,11 @@ class Smash_UpUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample()
+    func editPetertoVillarsPlayer()
     {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let textField = XCUIApplication().tables.children(matching: .cell).element(boundBy: 1).children(matching: .textField).element
+        textField.tap()
+        textField.typeText("Villars")
     }
 
 }
