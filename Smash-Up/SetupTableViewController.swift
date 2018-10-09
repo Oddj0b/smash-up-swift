@@ -66,7 +66,6 @@ class SetupTableViewController: UITableViewController {
         guard let player1 = Player(playerName: "Danielle", faction1: "Pirates", faction2: "Dragons") else {
             fatalError("Unable to create player1")
         }
-        
         guard let player2 = Player(playerName: "Peter", faction1: "Vampires", faction2: "Kung-fu fighters") else {
             fatalError("Unable to create player2")
         }
