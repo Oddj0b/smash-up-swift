@@ -26,11 +26,18 @@ class Smash_UpUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testEditPetertoVillarsPlayer()
-    {
+    func testEditPetertoVillarsPlayer() {
         let textField = XCUIApplication().tables.children(matching: .cell).element(boundBy: 1).children(matching: .textField).element
         textField.tap()
         textField.typeText("Villars")
+    }
+    func testSelectFaction() {
+        let tablesQuery = XCUIApplication().tables
+        let cell = tablesQuery.children(matching: .cell).element(boundBy: 0)
+        cell.children(matching: .button).matching(identifier: "Button").element(boundBy: 1).tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Tricksters"]/*[[".cells.staticTexts[\"Tricksters\"]",".staticTexts[\"Tricksters\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        cell.children(matching: .button).matching(identifier: "Button").element(boundBy: 0).tap()
+        tablesQuery.staticTexts["Pirates"].tap()
     }
 
 }
