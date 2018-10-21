@@ -43,7 +43,6 @@
 		927F021E20220F7700D629E0 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = "Smash-Up/Vendor/AppCenterAnalytics.framework"; sourceTree = "<group>"; };
 		927F021F20220F7700D629E0 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = "Smash-Up/Vendor/AppCenterCrashes.framework"; sourceTree = "<group>"; };
 		927F022020220F7700D629E0 /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenter.framework; path = "Smash-Up/Vendor/AppCenter.framework"; sourceTree = "<group>"; };
-		92924F161F41B324009CAE97 /* Smash-Up.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Smash-Up.entitlements"; sourceTree = "<group>"; };
 		929E19D61EB0A77B004EBC43 /* Smash-Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smash-Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		929E19D91EB0A77B004EBC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		929E19DE1EB0A77B004EBC43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,7 +134,6 @@
 		929E19D81EB0A77B004EBC43 /* Smash-Up */ = {
 			isa = PBXGroup;
 			children = (
-				92924F161F41B324009CAE97 /* Smash-Up.entitlements */,
 				927C3F601F224CDF00233977 /* Helpers */,
 				929E1A031EB0FC63004EBC43 /* Game Setup */,
 				929E19D91EB0A77B004EBC43 /* AppDelegate.swift */,
