@@ -135,10 +135,10 @@
 			isa = PBXGroup;
 			children = (
 				927C3F601F224CDF00233977 /* Helpers */,
+				921AB55520B203BB0068F467 /* Faction */,
 				929E1A031EB0FC63004EBC43 /* Game Setup */,
 				929E19D91EB0A77B004EBC43 /* AppDelegate.swift */,
 				929E19DD1EB0A77B004EBC43 /* Main.storyboard */,
-				921AB55520B203BB0068F467 /* Faction */,
 				929E19E01EB0A77B004EBC43 /* Assets.xcassets */,
 				929E19E21EB0A77B004EBC43 /* LaunchScreen.storyboard */,
 				929E19E51EB0A77B004EBC43 /* Info.plist */,
