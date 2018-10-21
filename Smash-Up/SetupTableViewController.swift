@@ -13,7 +13,6 @@ protocol factionSegueDelegator {
 }
 
 class SetupTableViewController: UITableViewController {
-    //MARK: Properties
     @IBOutlet weak var addPlayerButton: UIButton!
     //var numberOfPlayers:Int = 2
     
@@ -29,7 +28,6 @@ class SetupTableViewController: UITableViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1

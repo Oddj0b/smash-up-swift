@@ -19,6 +19,9 @@ class PlayerTableViewCell: UITableViewCell {
         // Initialization code
     }
     
+    func selectFaction(){
+        
+    }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

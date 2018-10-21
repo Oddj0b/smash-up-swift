@@ -42,7 +42,7 @@ class FactionTableViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedFactionName = factions[indexPath.section][indexPath.row]
         selectedExpansionName = expansions[indexPath.section]
-        print("\(selectedFactionName)")
+        print((String(selectedFactionName)))
         
         performSegue(withIdentifier: "unwindToSetupTableVC", sender: self)
         
