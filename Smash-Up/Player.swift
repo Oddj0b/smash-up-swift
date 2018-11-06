@@ -19,6 +19,11 @@ class Player{
         self.playerName = playerName
     }
     func addFaction(faction: String){
-            self.factions.append(faction)
+        var factionArray = self.factions
+        if factionArray.count > 1{
+            print("Cannot add more than two factions")
+        }else{
+            factionArray.append(faction)
+        }
     }
 }

@@ -50,27 +50,30 @@ class SetupTableViewController: UITableViewController {
     }
     
     //MARK: Helpers
-//    func moreThanFourPlyers(){
-//        if numberOfPlayers >= 4{
-//            print("All seats have been taken")
-//            addPlayerButton.isUserInteractionEnabled = false
-//        }else{
-//            print("Room for \(4 - numberOfPlayers) more players")
-//        }
-//    }
-    
-    
-    //MARK: Helpers
+    //    func moreThanFourPlyers(){
+    //        if numberOfPlayers >= 4{
+    //            print("All seats have been taken")
+    //            addPlayerButton.isUserInteractionEnabled = false
+    //        }else{
+    //            print("Room for \(4 - numberOfPlayers) more players")
+    //        }
+    //    }
     private func loadSamplePlayers(){
-        guard let player1 = Player(playerName: "Danielle", faction1: "Pirates", faction2: "Dragons") else {
+        guard let player1 = Player(playerName: "Danielle") else {
             fatalError("Unable to create player1")
         }
-        guard let player2 = Player(playerName: "Peter", faction1: "Vampires", faction2: "Kung-fu fighters") else {
+        player1.addFaction(faction: "Pirates")
+        player1.addFaction(faction: "Dragons")
+        guard let player2 = Player(playerName: "Peter") else {
             fatalError("Unable to create player2")
         }
-        guard let player3 = Player(playerName: "Flemming", faction1: "Sharks", faction2: "Elder things") else {
+        player2.addFaction(faction: "Vampires")
+        player2.addFaction(faction: "Kung-fu fighters")
+        guard let player3 = Player(playerName: "Flemming") else {
             fatalError("Unable to create player3")
         }
+        player3.addFaction(faction: "Sharks")
+        player3.addFaction(faction: "Elder things")
         players += [player1, player2, player3]
     }
     @IBAction func unwindToSetupTableVC(segue:UIStoryboardSegue) { }
