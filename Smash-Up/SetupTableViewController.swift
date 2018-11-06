@@ -45,10 +45,11 @@ class SetupTableViewController: UITableViewController {
         cell.playerNameTextField.text = player.playerName
         return cell
     }
-    
     func callSegueFromCell(playerData dataObject: Player){
         self.performSegue(withIdentifier: "selectFaction1", sender: dataObject)
     }
+    
+    //MARK: Helpers
 //    func moreThanFourPlyers(){
 //        if numberOfPlayers >= 4{
 //            print("All seats have been taken")

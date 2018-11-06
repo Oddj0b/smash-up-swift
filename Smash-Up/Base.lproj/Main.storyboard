@@ -114,7 +114,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button" image="selectFaction"/>
                                             <connections>
-                                                <segue destination="Lmg-FX-qra" kind="showDetail" identifier="faction1Segue" id="dYy-TZ-qA6"/>
+                                                <segue destination="Lmg-FX-qra" kind="showDetail" identifier="factionSegue" id="dYy-TZ-qA6"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M61-ig-Wcl">

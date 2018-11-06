@@ -19,7 +19,7 @@ class PlayerTableViewCell: UITableViewCell {
         // Initialization code
     }
     
-    func selectFaction(){
+    private func selectFaction(){
         
     }
     

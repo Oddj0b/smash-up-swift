@@ -9,16 +9,16 @@
 import Foundation
 class Player{
     var playerName: String
-    var faction1: String
-    var faction2: String
+    var factions = [String]()
     
-    init?(playerName: String, faction1: String, faction2: String){
+    init?(playerName: String){
         
         if playerName.isEmpty {
             return nil
         }
         self.playerName = playerName
-        self.faction1 = faction1
-        self.faction2 = faction2
+    }
+    func addFaction(faction: String){
+            self.factions.append(faction)
     }
 }
