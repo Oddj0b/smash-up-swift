@@ -8,7 +8,7 @@
 
 import Foundation
 class Game {
-    var player: Player?
+    var players = [Player]()
     var score: Int?
     
 }

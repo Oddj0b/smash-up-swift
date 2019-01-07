@@ -13,7 +13,6 @@ protocol factionSegueDelegator {
 }
 
 class SetupTableViewController: UITableViewController {
-    @IBOutlet weak var addPlayerButton: UIButton!
     //var numberOfPlayers:Int = 2
     
     var players = [Player]()
@@ -26,6 +25,13 @@ class SetupTableViewController: UITableViewController {
     }
     
     
+    @IBAction func addPlayer(_ sender: Any) {
+        let playerNumber: Int = 1
+        let activePlayers: Int = players.count
+        let nextPlayer: Int = playerNumber + activePlayers
+        print(nextPlayer)
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -74,7 +80,7 @@ class SetupTableViewController: UITableViewController {
         }
         player3.addFaction(faction: "Sharks")
         player3.addFaction(faction: "Elder things")
-        players += [player1, player2, player3]
+        players += [player1, player2]
     }
     @IBAction func unwindToSetupTableVC(segue:UIStoryboardSegue) { }
 }

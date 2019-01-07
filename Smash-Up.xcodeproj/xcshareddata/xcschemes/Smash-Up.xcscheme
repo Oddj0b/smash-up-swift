@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "929E19E91EB0A77B004EBC43"
+               BlueprintIdentifier = "92EE89DE215262A00099123E"
                BuildableName = "Smash-UpUITests.xctest"
                BlueprintName = "Smash-UpUITests"
                ReferencedContainer = "container:Smash-Up.xcodeproj">
@@ -92,7 +92,7 @@
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "Release">
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"

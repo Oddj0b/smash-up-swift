@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yFu-TO-0wu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yFu-TO-0wu">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -85,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1lS-pD-PO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3608" y="143"/>
+            <point key="canvasLocation" x="3452" y="239"/>
         </scene>
         <!--SetupViewController-->
         <scene sceneID="zEy-sW-IrK">
@@ -103,7 +103,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hft-jX-FNc" userLabel="playerName">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hft-jX-FNc" userLabel="playerName">
                                             <rect key="frame" x="12" y="0.0" width="296" height="30"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -128,6 +128,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="hft-jX-FNc" firstAttribute="centerX" secondItem="IK6-Ac-QxP" secondAttribute="centerX" id="B1F-pO-TfP"/>
+                                        <constraint firstItem="hft-jX-FNc" firstAttribute="top" secondItem="IK6-Ac-QxP" secondAttribute="top" id="KlW-q6-fM0"/>
                                         <constraint firstItem="hft-jX-FNc" firstAttribute="leading" secondItem="IK6-Ac-QxP" secondAttribute="leading" constant="12" id="Uj8-Be-2P9"/>
                                     </constraints>
                                 </tableViewCellContentView>
@@ -144,7 +145,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Set up game" id="1FX-Zh-C3I">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4sg-EP-dgn"/>
+                        <barButtonItem key="leftBarButtonItem" title="Start game" id="Cb1-Wh-7kc">
+                            <connections>
+                                <segue destination="yOE-Hs-vgc" kind="show" id="Qcd-ER-e9L"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4sg-EP-dgn">
+                            <connections>
+                                <action selector="addPlayer:" destination="iiv-S6-JMu" id="rWg-1E-ZO2"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WEd-1m-4sR" userLabel="First Responder" sceneMemberID="firstResponder"/>
