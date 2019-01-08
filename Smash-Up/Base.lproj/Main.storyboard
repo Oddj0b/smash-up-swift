@@ -68,6 +68,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game board placeholder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gq-ES-rUk">
                                 <rect key="frame" x="66" y="229.5" width="188.5" height="21"/>
+                                <accessibility key="accessibilityConfiguration" identifier="GB_placeholder"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="1MF-8c-AHc"/>
                                 </constraints>
@@ -77,6 +78,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgj-8X-m5P">
                                 <rect key="frame" x="117.5" y="430" width="85" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="finish_game_btn"/>
                                 <state key="normal" title="Finish Game"/>
                                 <connections>
                                     <segue destination="I1x-ZH-u2b" kind="presentation" id="gW7-FD-jGZ"/>
