@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		921AB55420B1E8110068F467 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */; };
+		9250BD0821E4E55D005C6D3C /* FactionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */; };
 		927C3F621F224CFE00233977 /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C3F611F224CFE00233977 /* Randoms.swift */; };
 		927F022120220F7700D629E0 /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927F021E20220F7700D629E0 /* AppCenterAnalytics.framework */; };
 		927F022220220F7700D629E0 /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927F021F20220F7700D629E0 /* AppCenterCrashes.framework */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
 		9234E1FE202244430074B95A /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterXCUITestExtensions.framework; path = Carthage/Build/iOS/AppCenterXCUITestExtensions.framework; sourceTree = "<group>"; };
+		9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionDelegate.swift; sourceTree = "<group>"; };
 		927C3F611F224CFE00233977 /* Randoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randoms.swift; sourceTree = "<group>"; };
 		927EB42620095ABE002C1495 /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterXCUITestExtensions.framework; path = Carthage/Build/iOS/AppCenterXCUITestExtensions.framework; sourceTree = "<group>"; };
 		927F021E20220F7700D629E0 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = "Smash-Up/Vendor/AppCenterAnalytics.framework"; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				92E4B9D81F76722600F7CFD3 /* FactionTableViewController.swift */,
 				929E19FB1EB0A89B004EBC43 /* Faction.swift */,
+				9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */,
 			);
 			name = Faction;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				929E1A001EB0AD58004EBC43 /* Game.swift in Sources */,
+				9250BD0821E4E55D005C6D3C /* FactionDelegate.swift in Sources */,
 				929E19FC1EB0A89B004EBC43 /* Faction.swift in Sources */,
 				927C3F621F224CFE00233977 /* Randoms.swift in Sources */,
 				929E19FA1EB0A807004EBC43 /* Player.swift in Sources */,

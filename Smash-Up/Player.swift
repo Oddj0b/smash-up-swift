@@ -9,7 +9,7 @@
 import Foundation
 class Player{
     var playerName: String
-    var factions = [String]()
+    var factions = [Faction]()
     
     init?(playerName: String){
         
@@ -18,7 +18,7 @@ class Player{
         }
         self.playerName = playerName
     }
-    func addFaction(faction: String){
+    func addFaction(faction: Faction){
         var factionArray = self.factions
         if factionArray.count > 1{
             print("Cannot add more than two factions")

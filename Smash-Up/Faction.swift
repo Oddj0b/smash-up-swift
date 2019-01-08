@@ -8,9 +8,9 @@
 
 import Foundation
 class Faction{
-    var factionName: String?
-    var factionExpansion: String?
-    init?(factionName: String, factionExpansion: String){
+    var factionName: String
+    var factionExpansion: String
+    init?(factionName: String!, factionExpansion: String!){
         if factionName.isEmpty {
             return nil
         }
