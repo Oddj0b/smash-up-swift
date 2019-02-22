@@ -13,26 +13,15 @@ protocol factionSegueDelegator {
     func callSegueFromCell(playerData dataObject: Player)
 }
 
-class SetupTableViewController: UITableViewController, FactionDelegate, StoreSubscriber {
+class SetupTableViewController: UITableViewController, StoreSubscriber {
     typealias StoreSubscriberStateType = AppState
     var players = [Player]()
-    var passedFaction1:String = ""
-    var passedFaction2:String = ""
-    var cellID:Int = 0
     
     @IBOutlet weak var numberOfPlayersLabel: UILabel!
-    //MARK: FactionDelegate fcuntions
-    func factionSelected(type: Faction) {
-        let player = players[cellID]
-        player.addFaction(faction: type)
-        print(players)
-    }
     
     //MARK: TableView functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //loadSamplePlayers()
         
         mainstore.subscribe(self)
     }
@@ -41,8 +30,12 @@ class SetupTableViewController: UITableViewController, FactionDelegate, StoreSub
     }
     @IBAction func addPlayer(_ sender: Any) {
         mainstore.dispatch(GameSetupActionIncreasePlayer())
+        var player =  Player(playerID: mainstore.state.numberOfPlayers, playerName: "Click to name player", factions: [])
+        players.append(player)
+        self.tableView.beginUpdates()
+        self.tableView.insertRows(at: [IndexPath.init(row: players.count-1, section: 0)], with: .automatic)
+        self.tableView.endUpdates()
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -56,25 +49,13 @@ class SetupTableViewController: UITableViewController, FactionDelegate, StoreSub
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? PlayerTableViewCell else {
             fatalError("The dequeued cell is not an instance of PlayerTableViewCell")
         }
-        cellID = indexPath.row
-        
-        //cell.playerNameTextField.text = player.playerName
         return cell
     }
     
-    func callSegueFromCell(playerData dataObject: Player){
-        self.performSegue(withIdentifier: "selectFaction1", sender: dataObject)
-    }
-    
-    //MARK: Helpers
-    private func loadSamplePlayers(){
-        guard let player1 = Player(playerName: "Danielle") else {
-            fatalError("Unable to create player1")
+    var player: Player? {
+        didSet {
+            guard let player = player else
+                { return }
         }
-        guard let player2 = Player(playerName: "Peter") else {
-            fatalError("Unable to create player2")
-        }
-        players.append(contentsOf: [player1, player2])
     }
-    @IBAction func unwindToSetupTableVC(segue:UIStoryboardSegue) { }
 }

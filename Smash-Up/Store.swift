@@ -9,7 +9,7 @@
 import ReSwift
 
 struct AppState: StateType {
-    var numberOfPlayers: Int = 2
+    var numberOfPlayers: Int = 0
 }
 
 

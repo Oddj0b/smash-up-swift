@@ -7,23 +7,9 @@
 //
 
 import Foundation
-class Player{
-    var playerName: String
-    var factions = [Faction]()
-    
-    init?(playerName: String){
-        
-        if playerName.isEmpty {
-            return nil
-        }
-        self.playerName = playerName
-    }
-    func addFaction(faction: Faction){
-        var factionArray = self.factions
-        if factionArray.count > 1{
-            print("Cannot add more than two factions")
-        }else{
-            factionArray.append(faction)
-        }
-    }
+
+struct Player{
+    let playerID: Int
+    let playerName: String
+    let factions: [Faction]
 }

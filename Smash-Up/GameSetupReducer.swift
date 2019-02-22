@@ -22,3 +22,19 @@ func gameSetupReducer(action: Action, state: AppState?) -> AppState{
 
     return state
 }
+
+//TODO: Implement player actions
+//init?(playerName: String){
+//
+//    if playerName.isEmpty {
+//        return nil
+//    }
+//    self.playerName = playerName
+//}
+//func addFaction(faction: Faction){
+//    var factionArray = self.factions
+//    if factionArray.count > 1{
+//        print("Cannot add more than two factions")
+//    }else{
+//        factionArray.append(faction)
+//}

@@ -148,11 +148,20 @@
 			name = Actions;
 			sourceTree = "<group>";
 		};
+		92118767222018C100BA9B7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				929E19F91EB0A807004EBC43 /* Player.swift */,
+				929E19FF1EB0AD58004EBC43 /* Game.swift */,
+				929E19FB1EB0A89B004EBC43 /* Faction.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		921AB55520B203BB0068F467 /* Faction */ = {
 			isa = PBXGroup;
 			children = (
 				92E4B9D81F76722600F7CFD3 /* FactionTableViewController.swift */,
-				929E19FB1EB0A89B004EBC43 /* Faction.swift */,
 				9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */,
 			);
 			name = Faction;
@@ -205,6 +214,7 @@
 		929E19D81EB0A77B004EBC43 /* Smash-Up */ = {
 			isa = PBXGroup;
 			children = (
+				92118767222018C100BA9B7F /* Models */,
 				92118761221FFD3100BA9B7F /* Actions */,
 				9211875E221FFC0800BA9B7F /* Reducer */,
 				9211875C221FFBE600BA9B7F /* State */,
@@ -215,8 +225,6 @@
 				929E19E01EB0A77B004EBC43 /* Assets.xcassets */,
 				929E19E21EB0A77B004EBC43 /* LaunchScreen.storyboard */,
 				929E19E51EB0A77B004EBC43 /* Info.plist */,
-				929E19F91EB0A807004EBC43 /* Player.swift */,
-				929E19FF1EB0AD58004EBC43 /* Game.swift */,
 				92C5FBF92060027D003E3B74 /* GameViewController.swift */,
 				927C3F601F224CDF00233977 /* Helpers */,
 			);

@@ -10,3 +10,5 @@ import ReSwift
 
 struct GameSetupActionIncreasePlayer: Action {}
 struct GameSetupActionDecreasePlayer: Action {}
+struct GameSetupActionSetPlayerName: Action {}
+struct GameSetupActionAddFaction: Action {}
