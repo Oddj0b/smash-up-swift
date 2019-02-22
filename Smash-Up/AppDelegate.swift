@@ -11,6 +11,12 @@ import AppCenter
 import AppCenterAnalytics
 import AppCenterCrashes
 import AppCenterDistribute
+import ReSwift
+
+let mainstore = Store<AppState>(
+    reducer: gameSetupReducer,
+    state: nil
+)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
