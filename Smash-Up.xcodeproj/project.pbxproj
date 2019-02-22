@@ -44,10 +44,8 @@
 
 /* Begin PBXFileReference section */
 		921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
-		9234E1FE202244430074B95A /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterXCUITestExtensions.framework; path = Carthage/Build/iOS/AppCenterXCUITestExtensions.framework; sourceTree = "<group>"; };
 		9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionDelegate.swift; sourceTree = "<group>"; };
 		927C3F611F224CFE00233977 /* Randoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randoms.swift; sourceTree = "<group>"; };
-		927EB42620095ABE002C1495 /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterXCUITestExtensions.framework; path = Carthage/Build/iOS/AppCenterXCUITestExtensions.framework; sourceTree = "<group>"; };
 		927F021E20220F7700D629E0 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = "Smash-Up/Vendor/AppCenterAnalytics.framework"; sourceTree = "<group>"; };
 		927F021F20220F7700D629E0 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = "Smash-Up/Vendor/AppCenterCrashes.framework"; sourceTree = "<group>"; };
 		927F022020220F7700D629E0 /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenter.framework; path = "Smash-Up/Vendor/AppCenter.framework"; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 		929E19F91EB0A807004EBC43 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		929E19FB1EB0A89B004EBC43 /* Faction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Faction.swift; sourceTree = "<group>"; };
 		929E19FF1EB0AD58004EBC43 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
-		92BED6E41FE136A400C01D5F /* AppCenterXCUITestExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterXCUITestExtensions.framework; path = Carthage/Build/iOS/AppCenterXCUITestExtensions.framework; sourceTree = "<group>"; };
 		92C5FBF92060027D003E3B74 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		92C5FBFF2060110A003E3B74 /* SetupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupTableViewController.swift; sourceTree = "<group>"; };
 		92CD20DF220B1D3D00B2AB2E /* AppCenterPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterPush.framework; sourceTree = "<group>"; };
@@ -114,12 +111,9 @@
 		924588D81F6752DA0094F6C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				927EB42620095ABE002C1495 /* AppCenterXCUITestExtensions.framework */,
 				927F022020220F7700D629E0 /* AppCenter.framework */,
 				927F021E20220F7700D629E0 /* AppCenterAnalytics.framework */,
 				927F021F20220F7700D629E0 /* AppCenterCrashes.framework */,
-				9234E1FE202244430074B95A /* AppCenterXCUITestExtensions.framework */,
-				92BED6E41FE136A400C01D5F /* AppCenterXCUITestExtensions.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
