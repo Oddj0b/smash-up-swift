@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92118759221FF30000BA9B7F /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92118758221FF30000BA9B7F /* ReSwift.framework */; };
 		921AB55420B1E8110068F467 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */; };
 		9250BD0821E4E55D005C6D3C /* FactionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */; };
 		927C3F621F224CFE00233977 /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C3F611F224CFE00233977 /* Randoms.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92118758221FF30000BA9B7F /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
 		9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionDelegate.swift; sourceTree = "<group>"; };
 		927C3F611F224CFE00233977 /* Randoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randoms.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			files = (
 				927F022120220F7700D629E0 /* AppCenterAnalytics.framework in Frameworks */,
 				92CD20EA220B1D3F00B2AB2E /* AppCenter.framework in Frameworks */,
+				92118759221FF30000BA9B7F /* ReSwift.framework in Frameworks */,
 				92CD20E5220B1D3F00B2AB2E /* AppCenterPush.framework in Frameworks */,
 				927F022320220F7700D629E0 /* AppCenter.framework in Frameworks */,
 				927F022220220F7700D629E0 /* AppCenterCrashes.framework in Frameworks */,
@@ -111,6 +114,7 @@
 		924588D81F6752DA0094F6C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				92118758221FF30000BA9B7F /* ReSwift.framework */,
 				92CD20E4220B1D3F00B2AB2E /* AppCenter.framework */,
 				92CD20E0220B1D3E00B2AB2E /* AppCenterAnalytics.framework */,
 				92CD20E2220B1D3E00B2AB2E /* AppCenterCrashes.framework */,
@@ -473,6 +477,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Smash-Up/Vendor",
 					"$(PROJECT_DIR)/Smash-Up",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Smash-Up/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -496,6 +501,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Smash-Up/Vendor",
 					"$(PROJECT_DIR)/Smash-Up",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Smash-Up/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
