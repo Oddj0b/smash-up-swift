@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		92118759221FF30000BA9B7F /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92118758221FF30000BA9B7F /* ReSwift.framework */; };
+		9211875B221FF60A00BA9B7F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211875A221FF60A00BA9B7F /* Store.swift */; };
+		92118760221FFC2100BA9B7F /* GameSetupReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211875F221FFC2100BA9B7F /* GameSetupReducer.swift */; };
+		92118763221FFD4400BA9B7F /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92118762221FFD4400BA9B7F /* Actions.swift */; };
 		921AB55420B1E8110068F467 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */; };
 		9250BD0821E4E55D005C6D3C /* FactionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */; };
 		927C3F621F224CFE00233977 /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C3F611F224CFE00233977 /* Randoms.swift */; };
@@ -45,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		92118758221FF30000BA9B7F /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		9211875A221FF60A00BA9B7F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		9211875F221FFC2100BA9B7F /* GameSetupReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSetupReducer.swift; sourceTree = "<group>"; };
+		92118762221FFD4400BA9B7F /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
 		9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionDelegate.swift; sourceTree = "<group>"; };
 		927C3F611F224CFE00233977 /* Randoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randoms.swift; sourceTree = "<group>"; };
@@ -101,6 +107,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9211875C221FFBE600BA9B7F /* State */ = {
+			isa = PBXGroup;
+			children = (
+				9211875A221FF60A00BA9B7F /* Store.swift */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		9211875E221FFC0800BA9B7F /* Reducer */ = {
+			isa = PBXGroup;
+			children = (
+				9211875F221FFC2100BA9B7F /* GameSetupReducer.swift */,
+			);
+			name = Reducer;
+			sourceTree = "<group>";
+		};
+		92118761221FFD3100BA9B7F /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				92118762221FFD4400BA9B7F /* Actions.swift */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
 		921AB55520B203BB0068F467 /* Faction */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,7 +188,9 @@
 		929E19D81EB0A77B004EBC43 /* Smash-Up */ = {
 			isa = PBXGroup;
 			children = (
-				927C3F601F224CDF00233977 /* Helpers */,
+				92118761221FFD3100BA9B7F /* Actions */,
+				9211875E221FFC0800BA9B7F /* Reducer */,
+				9211875C221FFBE600BA9B7F /* State */,
 				921AB55520B203BB0068F467 /* Faction */,
 				929E1A031EB0FC63004EBC43 /* Game Setup */,
 				929E19D91EB0A77B004EBC43 /* AppDelegate.swift */,
@@ -169,6 +201,7 @@
 				929E19F91EB0A807004EBC43 /* Player.swift */,
 				929E19FF1EB0AD58004EBC43 /* Game.swift */,
 				92C5FBF92060027D003E3B74 /* GameViewController.swift */,
+				927C3F601F224CDF00233977 /* Helpers */,
 			);
 			path = "Smash-Up";
 			sourceTree = "<group>";
@@ -307,14 +340,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				929E1A001EB0AD58004EBC43 /* Game.swift in Sources */,
+				92118763221FFD4400BA9B7F /* Actions.swift in Sources */,
 				9250BD0821E4E55D005C6D3C /* FactionDelegate.swift in Sources */,
 				929E19FC1EB0A89B004EBC43 /* Faction.swift in Sources */,
 				927C3F621F224CFE00233977 /* Randoms.swift in Sources */,
 				929E19FA1EB0A807004EBC43 /* Player.swift in Sources */,
 				92C5FC002060110A003E3B74 /* SetupTableViewController.swift in Sources */,
+				9211875B221FF60A00BA9B7F /* Store.swift in Sources */,
 				92C5FBFA2060027D003E3B74 /* GameViewController.swift in Sources */,
 				921AB55420B1E8110068F467 /* PlayerTableViewCell.swift in Sources */,
 				929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */,
+				92118760221FFC2100BA9B7F /* GameSetupReducer.swift in Sources */,
 				92E4B9D91F76722600F7CFD3 /* FactionTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
