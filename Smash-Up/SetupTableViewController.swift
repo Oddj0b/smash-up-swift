@@ -52,6 +52,18 @@ class SetupTableViewController: UITableViewController, StoreSubscriber {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == UITableViewCell.EditingStyle.delete {
+            self.tableView.beginUpdates()
+            self.tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.right)
+            mainstore.dispatch(GameSetupActionDecreasePlayer())
+            tableView.reloadData()
+            self.tableView.endUpdates()
+        }
+    }
     var player: Player? {
         didSet {
             guard let player = player else
