@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92118759221FF30000BA9B7F /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92118758221FF30000BA9B7F /* ReSwift.framework */; };
 		9211875B221FF60A00BA9B7F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211875A221FF60A00BA9B7F /* Store.swift */; };
 		92118760221FFC2100BA9B7F /* GameSetupReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211875F221FFC2100BA9B7F /* GameSetupReducer.swift */; };
 		92118763221FFD4400BA9B7F /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92118762221FFD4400BA9B7F /* Actions.swift */; };
@@ -103,7 +102,6 @@
 			files = (
 				927F022120220F7700D629E0 /* AppCenterAnalytics.framework in Frameworks */,
 				92CD20EA220B1D3F00B2AB2E /* AppCenter.framework in Frameworks */,
-				92118759221FF30000BA9B7F /* ReSwift.framework in Frameworks */,
 				921187642220063700BA9B7F /* ReSwift.framework in Frameworks */,
 				92CD20E5220B1D3F00B2AB2E /* AppCenterPush.framework in Frameworks */,
 				927F022320220F7700D629E0 /* AppCenter.framework in Frameworks */,
