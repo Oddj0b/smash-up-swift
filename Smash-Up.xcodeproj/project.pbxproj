@@ -10,10 +10,9 @@
 		9211875B221FF60A00BA9B7F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211875A221FF60A00BA9B7F /* Store.swift */; };
 		92118760221FFC2100BA9B7F /* GameSetupReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211875F221FFC2100BA9B7F /* GameSetupReducer.swift */; };
 		92118763221FFD4400BA9B7F /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92118762221FFD4400BA9B7F /* Actions.swift */; };
-		921187642220063700BA9B7F /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92118758221FF30000BA9B7F /* ReSwift.framework */; };
-		921187652220063700BA9B7F /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 92118758221FF30000BA9B7F /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		921AB55420B1E8110068F467 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */; };
 		9250BD0821E4E55D005C6D3C /* FactionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */; };
+		927759DA2237646600E476F1 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92118758221FF30000BA9B7F /* ReSwift.framework */; };
 		927C3F621F224CFE00233977 /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C3F611F224CFE00233977 /* Randoms.swift */; };
 		927F022220220F7700D629E0 /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927F021F20220F7700D629E0 /* AppCenterCrashes.framework */; };
 		927F022320220F7700D629E0 /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927F022020220F7700D629E0 /* AppCenter.framework */; };
@@ -44,20 +43,6 @@
 			remoteInfo = "Smash-Up";
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		921187662220063700BA9B7F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				921187652220063700BA9B7F /* ReSwift.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		92118758221FF30000BA9B7F /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
@@ -98,8 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				927759DA2237646600E476F1 /* ReSwift.framework in Frameworks */,
 				92CD20EA220B1D3F00B2AB2E /* AppCenter.framework in Frameworks */,
-				921187642220063700BA9B7F /* ReSwift.framework in Frameworks */,
 				927F022320220F7700D629E0 /* AppCenter.framework in Frameworks */,
 				927F022220220F7700D629E0 /* AppCenterCrashes.framework in Frameworks */,
 				92CD20E6220B1D3F00B2AB2E /* AppCenterAnalytics.framework in Frameworks */,
@@ -257,7 +242,7 @@
 				929E19D21EB0A77B004EBC43 /* Sources */,
 				929E19D31EB0A77B004EBC43 /* Frameworks */,
 				929E19D41EB0A77B004EBC43 /* Resources */,
-				921187662220063700BA9B7F /* Embed Frameworks */,
+				927759DB223764ED00E476F1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -357,6 +342,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		927759DB223764ED00E476F1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		929E19D21EB0A77B004EBC43 /* Sources */ = {
