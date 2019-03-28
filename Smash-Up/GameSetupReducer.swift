@@ -7,34 +7,38 @@
 //
 
 import ReSwift
+import Dwifft
 
 func gameSetupReducer(action: Action, state: AppState?) -> AppState{
     var state = state ?? AppState()
 
     switch action {
-    case _ as GameSetupActionIncreasePlayer:
-        state.numberOfPlayers += 1
-    case _ as GameSetupActionDecreasePlayer:
-        state.numberOfPlayers -= 1
+    case let addPlayerAction as GameSetupActionAddPlayer:
+        state.players.append(addPlayerAction.player)
+        break
+    case let removePlayerAction as GameSetupActionRemovePlayer:
+        state.players = state.players.filter({$0.id != removePlayerAction.id})
+        break
+    case let editPlayer as EditPlayer:
+        state.editingPlayerState = EditingPlayerState(id: editPlayer.playerId, factionIndex: editPlayer.factionIndex)
+        break
+    case let setFaction as SetFaction:
+        if let editingPlayerState = state.editingPlayerState{
+            let playerId = editingPlayerState.id
+            
+            var player = state.players.first { $0.id == playerId }!
+            let playerIndex = state.players.firstIndex(where:{$0.id == player.id})!
+            if editingPlayerState.factionIndex == .faction1{
+                player.faction1 = setFaction.faction
+            }else{
+                player.faction2 = setFaction.faction
+            }
+            state.players [playerIndex] = player
+         }
+        break
     default:
         break
     }
 
     return state
 }
-
-//TODO: Implement player actions
-//init?(playerName: String){
-//
-//    if playerName.isEmpty {
-//        return nil
-//    }
-//    self.playerName = playerName
-//}
-//func addFaction(faction: Faction){
-//    var factionArray = self.factions
-//    if factionArray.count > 1{
-//        print("Cannot add more than two factions")
-//    }else{
-//        factionArray.append(faction)
-//}

@@ -8,7 +8,27 @@
 
 import ReSwift
 
-struct GameSetupActionIncreasePlayer: Action {}
-struct GameSetupActionDecreasePlayer: Action {}
+struct GameSetupActionAddPlayer: Action {
+    let player: Player
+}
+struct GameSetupActionRemovePlayer: Action {
+    let id: UUID
+}
 struct GameSetupActionSetPlayerName: Action {}
 struct GameSetupActionAddFaction: Action {}
+func generateNewPlayerAction (playerName: String) -> GameSetupActionAddPlayer{
+    var player = Player()
+    player.playerName = playerName
+    return GameSetupActionAddPlayer.init(player: player)
+}
+enum FactionIndex {
+    case faction1
+    case faction2
+}
+struct EditPlayer: Action{
+    let factionIndex: FactionIndex
+    let playerId: UUID
+}
+struct SetFaction:Action {
+    let faction: Faction
+}

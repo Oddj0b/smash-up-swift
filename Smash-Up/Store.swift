@@ -9,15 +9,23 @@
 import ReSwift
 
 struct AppState: StateType {
-    var numberOfPlayers: Int = 0
+    var players = [Player]()
+    var editingPlayerState: EditingPlayerState?
+    var factions = [
+        [
+            Faction(factionName: "Pirates", factionExpansion: "Base Game"),
+            Faction(factionName: "Aliens", factionExpansion: "Base Game")
+        ],
+        [
+            Faction(factionName: "Bear Cavalry", factionExpansion: "Awesome Level 9000")
+        ]
+    ]
 }
-
-
-func appReducer(action: Action, state: AppState?) -> AppState {
-    return AppState()
+struct EditingPlayerState{
+    var id: UUID
+    var factionIndex: FactionIndex
 }
-
 let store = Store(
-    reducer: appReducer,
+    reducer: gameSetupReducer,
     state: AppState()
     )

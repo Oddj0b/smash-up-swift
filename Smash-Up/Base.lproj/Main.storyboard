@@ -46,7 +46,7 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <segue destination="lfl-Ld-Hll" kind="unwind" identifier="unwindToSetupTableVC" unwindAction="unwindToSetupTableVCWithSegue:" id="Kcd-bo-0TV"/>
+                        <segue destination="lfl-Ld-Hll" kind="unwind" identifier="unwindToSetupTableVC" unwindAction="unwindWithSegue:" id="IcS-dI-vqO"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F3Z-93-g5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -166,7 +166,7 @@
                                             </constraints>
                                             <state key="normal" title="Button" image="selectFaction"/>
                                             <connections>
-                                                <segue destination="Lmg-FX-qra" kind="showDetail" identifier="factionSegue" id="dYy-TZ-qA6"/>
+                                                <action selector="chooseFaction1:" destination="iiv-S6-JMu" eventType="touchUpInside" id="G9C-h2-9v5"/>
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M61-ig-Wcl">
@@ -177,7 +177,7 @@
                                             </constraints>
                                             <state key="normal" title="Button" image="selectFaction"/>
                                             <connections>
-                                                <segue destination="Lmg-FX-qra" kind="showDetail" identifier="faction2Segue" id="oNg-Dx-h3Y"/>
+                                                <action selector="chooseFaction2:" destination="iiv-S6-JMu" eventType="touchUpInside" id="dVy-wf-6KA"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -220,6 +220,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="numberOfPlayersLabel" destination="xul-8L-B8n" id="zGM-jJ-en9"/>
+                        <segue destination="Lmg-FX-qra" kind="popoverPresentation" identifier="selectFactionSegue" popoverAnchorView="sLH-xH-b1y" id="p6U-4g-wMG">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                        </segue>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WEd-1m-4sR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -247,10 +250,7 @@
     </scenes>
     <resources>
         <image name="a29795d17f08dbf18c3845363af6ff3c" width="256" height="256"/>
-        <image name="background" width="768" height="768"/>
+        <image name="background" width="512" height="512"/>
         <image name="selectFaction" width="250" height="250"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="dYy-TZ-qA6"/>
-    </inferredMetricsTieBreakers>
 </document>
