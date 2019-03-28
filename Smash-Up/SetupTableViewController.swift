@@ -7,15 +7,17 @@
 //
 
 import UIKit
-import os.log
 import ReSwift
+import Dwifft
 protocol factionSegueDelegator {
     func callSegueFromCell(playerData dataObject: Player)
 }
 
-class SetupTableViewController: UITableViewController, StoreSubscriber {
+class SetupTableViewController: UITableViewController, StoreSubscriber{
+    //    var diffCalculator: TableViewDiffCalculator<Player>?
+    
     typealias StoreSubscriberStateType = AppState
-    var players = [Player]()
+    var players = store.state.players
     
     @IBOutlet weak var numberOfPlayersLabel: UILabel!
     
@@ -23,25 +25,24 @@ class SetupTableViewController: UITableViewController, StoreSubscriber {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mainstore.subscribe(self)
+        store.subscribe(self)
     }
     func newState(state: AppState) {
-        numberOfPlayersLabel.text = "\(mainstore.state.numberOfPlayers)"
+        //numberOfPlayersLabel.text = "\(store.state.players.count)"
+        self.tableView.reloadData()
     }
     @IBAction func addPlayer(_ sender: Any) {
-        mainstore.dispatch(GameSetupActionIncreasePlayer())
-        var player =  Player(playerID: mainstore.state.numberOfPlayers, playerName: "Click to name player", factions: [])
-        players.append(player)
-        self.tableView.beginUpdates()
-        self.tableView.insertRows(at: [IndexPath.init(row: players.count-1, section: 0)], with: .automatic)
-        self.tableView.endUpdates()
+        store.dispatch(generateNewPlayerAction(playerName: "Click to set name"))
+        //        self.tableView.beginUpdates()
+        //        self.tableView.insertRows(at: [IndexPath.init(row: players.count-1, section: 0)], with: .automatic)
+        //        self.tableView.endUpdates()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return mainstore.state.numberOfPlayers
+        return store.state.players.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -49,6 +50,7 @@ class SetupTableViewController: UITableViewController, StoreSubscriber {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? PlayerTableViewCell else {
             fatalError("The dequeued cell is not an instance of PlayerTableViewCell")
         }
+        cell.playerId = store.state.players[indexPath.row].id
         return cell
     }
     
@@ -56,18 +58,24 @@ class SetupTableViewController: UITableViewController, StoreSubscriber {
         return true
     }
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == UITableViewCell.EditingStyle.delete {
-            self.tableView.beginUpdates()
-            self.tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.right)
-            mainstore.dispatch(GameSetupActionDecreasePlayer())
-            tableView.reloadData()
-            self.tableView.endUpdates()
-        }
+        let player = store.state.players[indexPath.row]
+        store.dispatch(GameSetupActionRemovePlayer(id: player.id))
     }
-    var player: Player? {
-        didSet {
-            guard let player = player else
-                { return }
+    @IBAction func chooseFaction1(_ sender: UIButton) {
+        guard let cell = sender.superview?.superview as? PlayerTableViewCell else{
+            fatalError()
         }
+        let playerId = cell.playerId!
+        store.dispatch(EditPlayer(factionIndex: .faction1, playerId: playerId))
+        performSegue(withIdentifier: "selectFactionSegue", sender: self)
     }
+    @IBAction func chooseFaction2(_ sender: UIButton) {
+        guard let cell = sender.superview?.superview as? PlayerTableViewCell else{
+            fatalError()
+        }
+        let playerId = cell.playerId!
+        store.dispatch(EditPlayer(factionIndex: .faction2, playerId: playerId))
+        performSegue(withIdentifier: "selectFactionSegue", sender: self)
+    }
+    @IBAction func unwind(segue:UIStoryboardSegue) { }
 }

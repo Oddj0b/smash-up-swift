@@ -13,7 +13,8 @@ class PlayerTableViewCell: UITableViewCell {
     @IBOutlet weak var playerNameTextField: UITextField!
     @IBOutlet weak var faction1: UIButton!
     @IBOutlet weak var faction2: UIButton!
-    
+    var playerId: UUID?
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

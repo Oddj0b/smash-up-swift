@@ -9,7 +9,8 @@
 import Foundation
 
 struct Player{
-    let playerID: Int
-    let playerName: String
-    let factions: [Faction]
+    let id: UUID = UUID()
+    var playerName: String?
+    var faction1: Faction?
+    var faction2: Faction?
 }

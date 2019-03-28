@@ -40,16 +40,6 @@ class Smash_UpUITests: XCTestCase {
         tablesQuery.staticTexts["Pirates"].tap()
     }
     func testGoThroughScreens() {
-
-        let app = XCUIApplication()
-        let setUpGameNavigationBar = app.navigationBars["Set up game"]
-        setUpGameNavigationBar.buttons["Add"].tap()
-        setUpGameNavigationBar.buttons["Start game"].tap()
-        app.staticTexts["Game board placeholder"].tap()
-        app.descendants(matching: UIButton)
-        app.buttons["Finish Game"].tap()
-        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .textField).element.tap()
-
     }
 
 }

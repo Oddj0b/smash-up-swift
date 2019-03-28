@@ -7,14 +7,7 @@
 //
 
 import Foundation
-class Faction{
-    var factionName: String
-    var factionExpansion: String
-    init?(factionName: String!, factionExpansion: String!){
-        if factionName.isEmpty {
-            return nil
-        }
-        self.factionName = factionName
-        self.factionExpansion = factionExpansion
-    }
+struct Faction{
+    let factionName: String
+    let factionExpansion: String
 }
