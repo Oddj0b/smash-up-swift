@@ -37,10 +37,9 @@ class SetupTableViewController: UITableViewController, StoreSubscriber{
         //        self.tableView.insertRows(at: [IndexPath.init(row: players.count-1, section: 0)], with: .automatic)
         //        self.tableView.endUpdates()
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    override func viewDidAppear(_ animated: Bool) {
+        self.tableView.reloadData()
     }
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return store.state.players.count
     }
@@ -50,7 +49,18 @@ class SetupTableViewController: UITableViewController, StoreSubscriber{
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? PlayerTableViewCell else {
             fatalError("The dequeued cell is not an instance of PlayerTableViewCell")
         }
-        cell.playerId = store.state.players[indexPath.row].id
+        let player = store.state.players[indexPath.row]
+        cell.playerId = player.id
+        if let faction1 = player.faction1{
+            cell.faction1.setImage(UIImage(named: faction1.factionName), for: .normal)
+        }else{
+            cell.faction1.setImage(nil, for: .normal)
+        }
+        if let faction2 = player.faction2{
+            cell.faction2.setImage(UIImage(named: faction2.factionName), for: .normal)
+        }else{
+            cell.faction1.setImage(nil, for: .normal)
+        }
         return cell
     }
     
