@@ -25,21 +25,30 @@ class Smash_UpUITests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testEditPetertoVillarsPlayer() {
-        let textField = XCUIApplication().tables.children(matching: .cell).element(boundBy: 1).children(matching: .textField).element
-        textField.tap()
-        textField.typeText("Villars")
-    }
     func testSelectFaction() {
         let tablesQuery = XCUIApplication().tables
+        XCUIApplication().navigationBars["Set up game"].buttons["Add"].tap()
         let cell = tablesQuery.children(matching: .cell).element(boundBy: 0)
-        cell.children(matching: .button).matching(identifier: "Button").element(boundBy: 1).tap()
-        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Tricksters"]/*[[".cells.staticTexts[\"Tricksters\"]",".staticTexts[\"Tricksters\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
-        cell.children(matching: .button).matching(identifier: "Button").element(boundBy: 0).tap()
-        tablesQuery.staticTexts["Pirates"].tap()
+        let app = XCUIApplication()
+        app.navigationBars["Set up game"].buttons["Add"].tap()
+        let tablesQuery2 = app.tables
+        cell.buttons["Select faction 2"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Aliens"]/*[[".cells.staticTexts[\"Aliens\"]",".staticTexts[\"Aliens\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        cell.buttons["Select faction 1"].tap()
+        tablesQuery/*@START_MENU_TOKEN@*/.staticTexts["Pirates"]/*[[".cells.staticTexts[\"Pirates\"]",".staticTexts[\"Pirates\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
     }
-    func testGoThroughScreens() {
+    func testStartGame() {
+        let app = XCUIApplication()
+        let setUpGameNavigationBar = app.navigationBars["Set up game"]
+        let addButton = setUpGameNavigationBar.buttons["Add"]
+        addButton.tap()
+        addButton.tap()
+        setUpGameNavigationBar.buttons["Start game"].tap()
+        app/*@START_MENU_TOKEN@*/.staticTexts["GB_placeholder"]/*[[".staticTexts[\"Game board placeholder\"]",".staticTexts[\"GB_placeholder\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+    }
+    func testEndGame() {
+        testStartGame()
+        XCUIApplication()/*@START_MENU_TOKEN@*/.buttons["finish_game_btn"]/*[[".buttons[\"Finish Game\"]",".buttons[\"finish_game_btn\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()        
     }
 
 }
