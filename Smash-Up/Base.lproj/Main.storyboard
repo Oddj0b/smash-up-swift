@@ -160,6 +160,7 @@
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vvf-5T-wbq">
                                             <rect key="frame" x="56" y="39" width="60" height="60"/>
+                                            <accessibility key="accessibilityConfiguration" label="Select faction 1"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="Vvf-5T-wbq" secondAttribute="height" multiplier="1:1" id="Z8z-Tf-H6U"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="eRe-f9-XQA"/>
@@ -171,6 +172,7 @@
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M61-ig-Wcl">
                                             <rect key="frame" x="194" y="39" width="60" height="60"/>
+                                            <accessibility key="accessibilityConfiguration" label="Select faction 2"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="M61-ig-Wcl" secondAttribute="height" multiplier="1:1" id="A8t-gP-Y2U"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="zCO-d3-hoB"/>

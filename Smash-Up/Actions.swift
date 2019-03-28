@@ -25,10 +25,10 @@ enum FactionIndex {
     case faction1
     case faction2
 }
-struct EditPlayer: Action{
+struct EditPlayer: Action {
     let factionIndex: FactionIndex
     let playerId: UUID
 }
-struct SetFaction:Action {
+struct SetFaction: Action {
     let faction: Faction
 }
