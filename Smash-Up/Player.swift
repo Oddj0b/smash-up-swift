@@ -13,4 +13,5 @@ struct Player{
     var playerName: String?
     var faction1: Faction?
     var faction2: Faction?
+    var points = 0
 }
