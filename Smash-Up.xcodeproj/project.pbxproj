@@ -32,7 +32,6 @@
 		92CD20EA220B1D3F00B2AB2E /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CD20E4220B1D3F00B2AB2E /* AppCenter.framework */; };
 		92E4B9D91F76722600F7CFD3 /* FactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E4B9D81F76722600F7CFD3 /* FactionTableViewController.swift */; };
 		92EE89E2215262A00099123E /* Smash_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EE89E1215262A00099123E /* Smash_UpUITests.swift */; };
-		92F3E45C223F0FD600BC7592 /* Dwifft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F3E45B223F0FD500BC7592 /* Dwifft.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +85,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				927759DA2237646600E476F1 /* ReSwift.framework in Frameworks */,
-				92F3E45C223F0FD600BC7592 /* Dwifft.framework in Frameworks */,
 				92CD20EA220B1D3F00B2AB2E /* AppCenter.framework in Frameworks */,
 				927F022320220F7700D629E0 /* AppCenter.framework in Frameworks */,
 				927F022220220F7700D629E0 /* AppCenterCrashes.framework in Frameworks */,
@@ -353,7 +351,6 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/ReSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Dwifft.framework",
 			);
 			outputFileListPaths = (
 			);
