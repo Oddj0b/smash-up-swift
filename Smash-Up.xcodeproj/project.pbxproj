@@ -12,6 +12,7 @@
 		92118763221FFD4400BA9B7F /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92118762221FFD4400BA9B7F /* Actions.swift */; };
 		921AB55420B1E8110068F467 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */; };
 		9250BD0821E4E55D005C6D3C /* FactionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */; };
+		925B6B662253CABB00D64837 /* Smash_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B6B652253CABB00D64837 /* Smash_UpTests.swift */; };
 		927759DA2237646600E476F1 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92118758221FF30000BA9B7F /* ReSwift.framework */; };
 		927C3F621F224CFE00233977 /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C3F611F224CFE00233977 /* Randoms.swift */; };
 		927F022220220F7700D629E0 /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 927F021F20220F7700D629E0 /* AppCenterCrashes.framework */; };
@@ -35,6 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		925B6B682253CABB00D64837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 929E19CE1EB0A77B004EBC43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 929E19D51EB0A77B004EBC43;
+			remoteInfo = "Smash-Up";
+		};
 		92EE89E4215262A00099123E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 929E19CE1EB0A77B004EBC43 /* Project object */;
@@ -51,6 +59,9 @@
 		92118762221FFD4400BA9B7F /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 		921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
 		9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionDelegate.swift; sourceTree = "<group>"; };
+		925B6B632253CABA00D64837 /* Smash-UpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smash-UpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		925B6B652253CABB00D64837 /* Smash_UpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smash_UpTests.swift; sourceTree = "<group>"; };
+		925B6B672253CABB00D64837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		927C3F611F224CFE00233977 /* Randoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Randoms.swift; sourceTree = "<group>"; };
 		927F021E20220F7700D629E0 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = "Smash-Up/Vendor/AppCenterAnalytics.framework"; sourceTree = "<group>"; };
 		927F021F20220F7700D629E0 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = "Smash-Up/Vendor/AppCenterCrashes.framework"; sourceTree = "<group>"; };
@@ -80,6 +91,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		925B6B602253CABA00D64837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		929E19D31EB0A77B004EBC43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -165,6 +183,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		925B6B642253CABB00D64837 /* Smash-UpTests */ = {
+			isa = PBXGroup;
+			children = (
+				925B6B652253CABB00D64837 /* Smash_UpTests.swift */,
+				925B6B672253CABB00D64837 /* Info.plist */,
+			);
+			path = "Smash-UpTests";
+			sourceTree = "<group>";
+		};
 		927C3F601F224CDF00233977 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +205,7 @@
 			children = (
 				929E19D81EB0A77B004EBC43 /* Smash-Up */,
 				92EE89E0215262A00099123E /* Smash-UpUITests */,
+				925B6B642253CABB00D64837 /* Smash-UpTests */,
 				929E19D71EB0A77B004EBC43 /* Products */,
 				924588D81F6752DA0094F6C5 /* Frameworks */,
 			);
@@ -188,6 +216,7 @@
 			children = (
 				929E19D61EB0A77B004EBC43 /* Smash-Up.app */,
 				92EE89DF215262A00099123E /* Smash-UpUITests.xctest */,
+				925B6B632253CABA00D64837 /* Smash-UpTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,6 +262,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		925B6B622253CABA00D64837 /* Smash-UpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 925B6B6C2253CABB00D64837 /* Build configuration list for PBXNativeTarget "Smash-UpTests" */;
+			buildPhases = (
+				925B6B5F2253CABA00D64837 /* Sources */,
+				925B6B602253CABA00D64837 /* Frameworks */,
+				925B6B612253CABA00D64837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				925B6B692253CABB00D64837 /* PBXTargetDependency */,
+			);
+			name = "Smash-UpTests";
+			productName = "Smash-UpTests";
+			productReference = 925B6B632253CABA00D64837 /* Smash-UpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		929E19D51EB0A77B004EBC43 /* Smash-Up */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 929E19F31EB0A77B004EBC43 /* Build configuration list for PBXNativeTarget "Smash-Up" */;
@@ -275,10 +322,16 @@
 		929E19CE1EB0A77B004EBC43 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "RibEye Studios";
 				TargetAttributes = {
+					925B6B622253CABA00D64837 = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = T2TBC34KR3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 929E19D51EB0A77B004EBC43;
+					};
 					929E19D51EB0A77B004EBC43 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = T2TBC34KR3;
@@ -316,11 +369,19 @@
 			targets = (
 				929E19D51EB0A77B004EBC43 /* Smash-Up */,
 				92EE89DE215262A00099123E /* Smash-UpUITests */,
+				925B6B622253CABA00D64837 /* Smash-UpTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		925B6B612253CABA00D64837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		929E19D41EB0A77B004EBC43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +425,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		925B6B5F2253CABA00D64837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				925B6B662253CABB00D64837 /* Smash_UpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		929E19D21EB0A77B004EBC43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,6 +464,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		925B6B692253CABB00D64837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 929E19D51EB0A77B004EBC43 /* Smash-Up */;
+			targetProxy = 925B6B682253CABB00D64837 /* PBXContainerItemProxy */;
+		};
 		92EE89E5215262A00099123E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 929E19D51EB0A77B004EBC43 /* Smash-Up */;
@@ -422,6 +496,53 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		925B6B6A2253CABB00D64837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T2TBC34KR3;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Smash-UpTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ribeyestudios.Smash-UpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smash-Up.app/Smash-Up";
+			};
+			name = Debug;
+		};
+		925B6B6B2253CABB00D64837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T2TBC34KR3;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Smash-UpTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ribeyestudios.Smash-UpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smash-Up.app/Smash-Up";
+			};
+			name = Release;
+		};
 		929E19F11EB0A77B004EBC43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -631,6 +752,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		925B6B6C2253CABB00D64837 /* Build configuration list for PBXNativeTarget "Smash-UpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				925B6B6A2253CABB00D64837 /* Debug */,
+				925B6B6B2253CABB00D64837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		929E19D11EB0A77B004EBC43 /* Build configuration list for PBXProject "Smash-Up" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
