@@ -25,9 +25,6 @@ struct EditingPlayerState{
     var id: UUID
     var factionIndex: FactionIndex
 }
-struct PlayingState{
-    
-}
 let store = Store(
     reducer: gameSetupReducer,
     state: AppState()
