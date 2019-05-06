@@ -33,6 +33,7 @@
 		92CD20EA220B1D3F00B2AB2E /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CD20E4220B1D3F00B2AB2E /* AppCenter.framework */; };
 		92E4B9D91F76722600F7CFD3 /* FactionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E4B9D81F76722600F7CFD3 /* FactionTableViewController.swift */; };
 		92EE89E2215262A00099123E /* Smash_UpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92EE89E1215262A00099123E /* Smash_UpUITests.swift */; };
+		92F3E45C223F0FD600BC7592 /* Dwifft.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F3E45B223F0FD500BC7592 /* Dwifft.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,12 +78,12 @@
 		929E19FF1EB0AD58004EBC43 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		92C5FBF92060027D003E3B74 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		92C5FBFF2060110A003E3B74 /* SetupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupTableViewController.swift; sourceTree = "<group>"; };
-		92CD20DF220B1D3D00B2AB2E /* AppCenterPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterPush.framework; path = "Smash-Up/AppCenterPush.framework"; sourceTree = "<group>"; };
-		92CD20E0220B1D3E00B2AB2E /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = "Smash-Up/AppCenterAnalytics.framework"; sourceTree = "<group>"; };
-		92CD20E1220B1D3E00B2AB2E /* AppCenterDistributeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AppCenterDistributeResources.bundle; path = "Smash-Up/AppCenterDistributeResources.bundle"; sourceTree = "<group>"; };
-		92CD20E2220B1D3E00B2AB2E /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = "Smash-Up/AppCenterCrashes.framework"; sourceTree = "<group>"; };
-		92CD20E3220B1D3F00B2AB2E /* AppCenterDistribute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterDistribute.framework; path = "Smash-Up/AppCenterDistribute.framework"; sourceTree = "<group>"; };
-		92CD20E4220B1D3F00B2AB2E /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenter.framework; path = "Smash-Up/AppCenter.framework"; sourceTree = "<group>"; };
+		92CD20DF220B1D3D00B2AB2E /* AppCenterPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterPush.framework; sourceTree = "<group>"; };
+		92CD20E0220B1D3E00B2AB2E /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterAnalytics.framework; sourceTree = "<group>"; };
+		92CD20E1220B1D3E00B2AB2E /* AppCenterDistributeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppCenterDistributeResources.bundle; sourceTree = "<group>"; };
+		92CD20E2220B1D3E00B2AB2E /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterCrashes.framework; sourceTree = "<group>"; };
+		92CD20E3220B1D3F00B2AB2E /* AppCenterDistribute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterDistribute.framework; sourceTree = "<group>"; };
+		92CD20E4220B1D3F00B2AB2E /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenter.framework; sourceTree = "<group>"; };
 		92E4B9D81F76722600F7CFD3 /* FactionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionTableViewController.swift; sourceTree = "<group>"; };
 		92EE89DF215262A00099123E /* Smash-UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smash-UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EE89E1215262A00099123E /* Smash_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smash_UpUITests.swift; sourceTree = "<group>"; };
@@ -176,9 +177,6 @@
 				92CD20E3220B1D3F00B2AB2E /* AppCenterDistribute.framework */,
 				92CD20E1220B1D3E00B2AB2E /* AppCenterDistributeResources.bundle */,
 				92CD20DF220B1D3D00B2AB2E /* AppCenterPush.framework */,
-				927F022020220F7700D629E0 /* AppCenter.framework */,
-				927F021E20220F7700D629E0 /* AppCenterAnalytics.framework */,
-				927F021F20220F7700D629E0 /* AppCenterCrashes.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -224,10 +222,8 @@
 		929E19D81EB0A77B004EBC43 /* Smash-Up */ = {
 			isa = PBXGroup;
 			children = (
-				92118767222018C100BA9B7F /* Models */,
-				92118761221FFD3100BA9B7F /* Actions */,
-				9211875E221FFC0800BA9B7F /* Reducer */,
-				9211875C221FFBE600BA9B7F /* State */,
+				92CD20DE220B1D0900B2AB2E /* Vendor */,
+				927C3F601F224CDF00233977 /* Helpers */,
 				921AB55520B203BB0068F467 /* Faction */,
 				929E1A031EB0FC63004EBC43 /* Game Setup */,
 				929E19D91EB0A77B004EBC43 /* AppDelegate.swift */,
@@ -248,6 +244,19 @@
 				921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */,
 			);
 			name = "Game Setup";
+			sourceTree = "<group>";
+		};
+		92CD20DE220B1D0900B2AB2E /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				92CD20E4220B1D3F00B2AB2E /* AppCenter.framework */,
+				92CD20E0220B1D3E00B2AB2E /* AppCenterAnalytics.framework */,
+				92CD20E2220B1D3E00B2AB2E /* AppCenterCrashes.framework */,
+				92CD20E3220B1D3F00B2AB2E /* AppCenterDistribute.framework */,
+				92CD20E1220B1D3E00B2AB2E /* AppCenterDistributeResources.bundle */,
+				92CD20DF220B1D3D00B2AB2E /* AppCenterPush.framework */,
+			);
+			name = Vendor;
 			sourceTree = "<group>";
 		};
 		92EE89E0215262A00099123E /* Smash-UpUITests */ = {

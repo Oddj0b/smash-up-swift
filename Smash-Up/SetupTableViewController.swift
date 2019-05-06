@@ -8,6 +8,7 @@
 
 import UIKit
 import ReSwift
+import Dwifft
 protocol factionSegueDelegator {
     func callSegueFromCell(playerData dataObject: Player)
 }
