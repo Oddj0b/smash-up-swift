@@ -7,7 +7,6 @@
 //
 
 import ReSwift
-import Dwifft
 
 func gameSetupReducer(action: Action, state: AppState?) -> AppState{
     var state = state ?? AppState()
