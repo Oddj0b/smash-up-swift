@@ -329,13 +329,14 @@
 					925B6B622253CABA00D64837 = {
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = T2TBC34KR3;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 929E19D51EB0A77B004EBC43;
 					};
 					929E19D51EB0A77B004EBC43 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = T2TBC34KR3;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
@@ -349,6 +350,7 @@
 					92EE89DE215262A00099123E = {
 						CreatedOnToolsVersion = 10.0;
 						DevelopmentTeam = T2TBC34KR3;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Manual;
 						TestTargetID = 929E19D51EB0A77B004EBC43;
 					};
@@ -514,7 +516,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ribeyestudios.Smash-UpTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smash-Up.app/Smash-Up";
 			};
@@ -537,7 +539,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ribeyestudios.Smash-UpTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smash-Up.app/Smash-Up";
 			};
@@ -672,7 +674,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "09d7d6ab-45f7-458f-883a-a05db0b483f8";
 				PROVISIONING_PROFILE_SPECIFIER = "developments.smash-up";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -696,7 +698,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "1d25f0fd-5421-4552-8230-e6b2be29984d";
 				PROVISIONING_PROFILE_SPECIFIER = "distribution.smash-up";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -719,7 +721,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "1d25f0fd-5421-4552-8230-e6b2be29984d";
 				PROVISIONING_PROFILE_SPECIFIER = smashUpUITest.dev;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Smash-Up";
 			};
@@ -743,7 +745,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "1d25f0fd-5421-4552-8230-e6b2be29984d";
 				PROVISIONING_PROFILE_SPECIFIER = smashUpUITest.dev;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Smash-Up";
 			};
