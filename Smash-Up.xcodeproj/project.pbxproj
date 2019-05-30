@@ -19,6 +19,7 @@
 		9211F0092281A65000D02773 /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9211F0072281A65000D02773 /* AppCenterCrashes.framework */; };
 		9211F00A2281A65000D02773 /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9211F0082281A65000D02773 /* AppCenterAnalytics.framework */; };
 		921AB55420B1E8110068F467 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */; };
+		9246873E22A017E50087BFE4 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246873D22A017E50087BFE4 /* ResultViewController.swift */; };
 		9250BD0821E4E55D005C6D3C /* FactionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */; };
 		925B6B662253CABB00D64837 /* Smash_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B6B652253CABB00D64837 /* Smash_UpTests.swift */; };
 		927759DA2237646600E476F1 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92118758221FF30000BA9B7F /* ReSwift.framework */; };
@@ -67,6 +68,7 @@
 		9211F0072281A65000D02773 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = Vendor/AppCenterCrashes.framework; sourceTree = "<group>"; };
 		9211F0082281A65000D02773 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = Vendor/AppCenterAnalytics.framework; sourceTree = "<group>"; };
 		921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		9246873D22A017E50087BFE4 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionDelegate.swift; sourceTree = "<group>"; };
 		925B6B632253CABA00D64837 /* Smash-UpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smash-UpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		925B6B652253CABB00D64837 /* Smash_UpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smash_UpTests.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				92C5FBF92060027D003E3B74 /* GameViewController.swift */,
 				927C3F601F224CDF00233977 /* Helpers */,
 				92CD20DE220B1D0900B2AB2E /* Vendor */,
+				9246873D22A017E50087BFE4 /* ResultViewController.swift */,
 			);
 			path = "Smash-Up";
 			sourceTree = "<group>";
@@ -448,6 +451,7 @@
 				9211EFFE2281A4FA00D02773 /* GameSetupReducer.swift in Sources */,
 				92C5FC002060110A003E3B74 /* SetupTableViewController.swift in Sources */,
 				92C5FBFA2060027D003E3B74 /* GameViewController.swift in Sources */,
+				9246873E22A017E50087BFE4 /* ResultViewController.swift in Sources */,
 				921AB55420B1E8110068F467 /* PlayerTableViewCell.swift in Sources */,
 				929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */,
 				92E4B9D91F76722600F7CFD3 /* FactionTableViewController.swift in Sources */,
