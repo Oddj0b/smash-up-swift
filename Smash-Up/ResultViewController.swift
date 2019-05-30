@@ -20,15 +20,15 @@ class ResultViewController: UIViewController {
     }
     func createGradient() {
         gradientLayer.colors = [UIColor.red, UIColor.blue].map { $0.cgColor }
-        gradientLayer.startPoint = CGPoint(x: 0, y:0)
-        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
+        gradientLayer.startPoint = CGPoint(x: 1, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
         gradientLayer.frame = self.view.bounds
         view.layer.addSublayer(gradientLayer)
     }
     func cycleGradient() {
         let gradientAnimation = CABasicAnimation(keyPath: #keyPath(CAGradientLayer.colors))
         gradientAnimation.fromValue = gradientLayer.colors
-        gradientAnimation.toValue = [UIColor.purple, UIColor.yellow].map { $0.cgColor }
+        gradientAnimation.toValue = [UIColor.blue, UIColor.red].map { $0.cgColor }
         gradientAnimation.duration = 3.0
         gradientAnimation.delegate = self
         gradientAnimation.fillMode = .forwards
@@ -39,7 +39,7 @@ class ResultViewController: UIViewController {
 extension ResultViewController: CAAnimationDelegate {
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
         if flag {
-            
+            cycleGradient()
         }
     }
 }
