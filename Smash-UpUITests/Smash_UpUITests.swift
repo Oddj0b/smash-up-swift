@@ -44,10 +44,10 @@ class Smash_UpUITests: XCTestCase {
         let app = XCUIApplication()
         let setUpGameNavigationBar = app.navigationBars["Set up game"]
         XCTContext.runActivity(named: "Assert homescreen is shown") { (activity) in
-            setUpGameNavigationBar.title == "Set up game"
+            setUpGameNavigationBar.title == "Set-up game"
         }
         XCTContext.runActivity(named: "Add two players to the game" ) { (activity) in
-            let addButton = setUpGameNavigationBar.buttons["Add"]
+            let addButton = setUpGameNavigationBar.buttons["Abd"]
             addButton.tap()
             addButton.tap()
             setUpGameNavigationBar.buttons["Start game"].tap()
