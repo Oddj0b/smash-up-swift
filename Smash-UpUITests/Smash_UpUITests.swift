@@ -43,9 +43,6 @@ class Smash_UpUITests: XCTestCase {
     func testStartGame() {
         let app = XCUIApplication()
         let setUpGameNavigationBar = app.navigationBars["Set up game"]
-        XCTContext.runActivity(named: "Assert homescreen is shown") { (activity) in
-            setUpGameNavigationBar.title == "Set up game"
-        }
         XCTContext.runActivity(named: "Add two players to the game" ) { (activity) in
             let addButton = setUpGameNavigationBar.buttons["Add"]
             addButton.tap()
