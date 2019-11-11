@@ -19,7 +19,7 @@ set -e
 ##
 
 echo "Building XCUITest"
-xcrun xcodebuild build-for-testing -project $APPCENTER_SOURCE_DIRECTORY/Smash-Up.xcodeproj -configuration Debug -sdk iphoneos -scheme Smash-Up -derivedDataPath $APPCENTER_OUTPUT_DIRECTORY/DerivedData
+xcrun xcodebuild build-for-testing -project $APPCENTER_SOURCE_DIRECTORY/Smash-Up.xcodeproj -configuration $APPCENTER_XCODE_PROJECT -sdk iphoneos -scheme $APPCENTER_XCODE_SCHEME -derivedDataPath $APPCENTER_OUTPUT_DIRECTORY/DerivedData
 
 echo "Running test in App Center Test"
-appcenter test run xcuitest --app $APP_OWNER --devices $DEVICE_SET --test-series "$APPCENTER_BRANCH-$APPCENTER_TRIGGER" --locale $LOCALE --build-dir $APP_CENTER_OUTPUT_DIRECTORY/DerivedData/Build/Products/Debug-iphoneos
+appcenter test run xcuitest --app $APP_OWNER --devices $DEVICE_SET --test-series "$APPCENTER_BRANCH-$APPCENTER_TRIGGER" --locale $LOCALE --build-dir $APP_CENTER_OUTPUT_DIRECTORY/DerivedData/Build/Products/Debug-iphoneos --token $APPCENTER_TOKEN
