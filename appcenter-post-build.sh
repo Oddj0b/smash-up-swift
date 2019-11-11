@@ -23,4 +23,3 @@ xcrun xcodebuild build-for-testing -project $APPCENTER_SOURCE_DIRECTORY/Smash-Up
 
 echo "Running test in App Center Test"
 appcenter test run xcuitest --app $APP_OWNER --devices $DEVICE_SET --test-series "$APPCENTER_BRANCH-$APPCENTER_TRIGGER" --locale $LOCALE --build-dir $APP_CENTER_OUTPUT_DIRECTORY/DerivedData/Build/Products/Debug-iphoneos
-
