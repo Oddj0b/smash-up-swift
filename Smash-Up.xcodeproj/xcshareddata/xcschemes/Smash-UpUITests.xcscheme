@@ -16,18 +16,16 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "929E19E91EB0A77B004EBC43"
+               BlueprintIdentifier = "92EE89DE215262A00099123E"
                BuildableName = "Smash-UpUITests.xctest"
                BlueprintName = "Smash-UpUITests"
                ReferencedContainer = "container:Smash-Up.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -36,8 +34,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "929E19D51EB0A77B004EBC43"
+            BuildableName = "Smash-Up.app"
+            BlueprintName = "Smash-Up"
+            ReferencedContainer = "container:Smash-Up.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
