@@ -665,7 +665,6 @@
 				DEVELOPMENT_TEAM = T2TBC34KR3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Smash-Up/Vendor",
 					"$(PROJECT_DIR)/Smash-Up",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
@@ -689,7 +688,6 @@
 				DEVELOPMENT_TEAM = T2TBC34KR3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Smash-Up/Vendor",
 					"$(PROJECT_DIR)/Smash-Up",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
@@ -723,7 +721,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ribeyestudios.Smash-UpUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "SmashUp-test";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard;
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphonesimulator*]" = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
@@ -750,7 +748,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ribeyestudios.Smash-UpUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "SmashUp-test";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard;
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphonesimulator*]" = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_VERSION = 5.0;
