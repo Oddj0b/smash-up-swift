@@ -7,7 +7,7 @@ jobs:
     runs-on: [macos-latest]
     env:
       XC_VERSION: ${{ '11.4' }}
-      XC_XCODEPROJECT: ${{ 'Smash-up.xcideproj' }}
+      XC_XCODEPROJECT: ${{ 'Smash-up.xcodeproj' }}
       XC_SCHEME: ${{ 'Smash-up' }}
     steps:
     - name: Select latest Xcode
