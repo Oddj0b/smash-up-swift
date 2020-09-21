@@ -1,7 +1,7 @@
 name: Build and Test app
 on: 
   push:
-    branches: [master]
+    branches: [base]
 jobs:
   build:
     runs-on: [macos-latest]
