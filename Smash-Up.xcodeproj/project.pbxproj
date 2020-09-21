@@ -13,16 +13,19 @@
 		9211EFFE2281A4FA00D02773 /* GameSetupReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211EFF82281A4FA00D02773 /* GameSetupReducer.swift */; };
 		9211EFFF2281A4FA00D02773 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211EFF92281A4FA00D02773 /* Store.swift */; };
 		9211F0002281A4FA00D02773 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9211EFFA2281A4FA00D02773 /* Actions.swift */; };
-		9211F0042281A62700D02773 /* AppCenterDistributeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9211F0012281A62600D02773 /* AppCenterDistributeResources.bundle */; };
-		9211F0052281A62700D02773 /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9211F0022281A62600D02773 /* AppCenter.framework */; };
-		9211F0062281A62700D02773 /* AppCenterDistribute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9211F0032281A62700D02773 /* AppCenterDistribute.framework */; };
-		9211F0092281A65000D02773 /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9211F0072281A65000D02773 /* AppCenterCrashes.framework */; };
-		9211F00A2281A65000D02773 /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9211F0082281A65000D02773 /* AppCenterAnalytics.framework */; };
 		921AB55420B1E8110068F467 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */; };
+		922D012C2518CBA300079816 /* AppCenterDistribute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922D01282518CBA300079816 /* AppCenterDistribute.framework */; };
+		922D012D2518CBA300079816 /* AppCenterDistribute.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 922D01282518CBA300079816 /* AppCenterDistribute.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		922D012E2518CBA300079816 /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922D01292518CBA300079816 /* AppCenter.framework */; };
+		922D012F2518CBA300079816 /* AppCenter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 922D01292518CBA300079816 /* AppCenter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		922D01302518CBA300079816 /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922D012A2518CBA300079816 /* AppCenterCrashes.framework */; };
+		922D01312518CBA300079816 /* AppCenterCrashes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 922D012A2518CBA300079816 /* AppCenterCrashes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		922D01322518CBA300079816 /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 922D012B2518CBA300079816 /* AppCenterAnalytics.framework */; };
+		922D01332518CBA300079816 /* AppCenterAnalytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 922D012B2518CBA300079816 /* AppCenterAnalytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		922D01372518CBF800079816 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92118758221FF30000BA9B7F /* ReSwift.framework */; };
 		9246873E22A017E50087BFE4 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9246873D22A017E50087BFE4 /* ResultViewController.swift */; };
 		9250BD0821E4E55D005C6D3C /* FactionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */; };
 		925B6B662253CABB00D64837 /* Smash_UpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B6B652253CABB00D64837 /* Smash_UpTests.swift */; };
-		927759DA2237646600E476F1 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92118758221FF30000BA9B7F /* ReSwift.framework */; };
 		927C3F621F224CFE00233977 /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 927C3F611F224CFE00233977 /* Randoms.swift */; };
 		929E19DA1EB0A77B004EBC43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 929E19D91EB0A77B004EBC43 /* AppDelegate.swift */; };
 		929E19DF1EB0A77B004EBC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 929E19DD1EB0A77B004EBC43 /* Main.storyboard */; };
@@ -51,6 +54,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		922D01342518CBA300079816 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				922D012D2518CBA300079816 /* AppCenterDistribute.framework in Embed Frameworks */,
+				922D012F2518CBA300079816 /* AppCenter.framework in Embed Frameworks */,
+				922D01332518CBA300079816 /* AppCenterAnalytics.framework in Embed Frameworks */,
+				922D01312518CBA300079816 /* AppCenterCrashes.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		92118758221FF30000BA9B7F /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
 		9211875A221FF60A00BA9B7F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
@@ -62,12 +82,11 @@
 		9211EFF82281A4FA00D02773 /* GameSetupReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSetupReducer.swift; sourceTree = "<group>"; };
 		9211EFF92281A4FA00D02773 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		9211EFFA2281A4FA00D02773 /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
-		9211F0012281A62600D02773 /* AppCenterDistributeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AppCenterDistributeResources.bundle; path = Vendor/AppCenterDistributeResources.bundle; sourceTree = "<group>"; };
-		9211F0022281A62600D02773 /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenter.framework; path = Vendor/AppCenter.framework; sourceTree = "<group>"; };
-		9211F0032281A62700D02773 /* AppCenterDistribute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterDistribute.framework; path = Vendor/AppCenterDistribute.framework; sourceTree = "<group>"; };
-		9211F0072281A65000D02773 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = Vendor/AppCenterCrashes.framework; sourceTree = "<group>"; };
-		9211F0082281A65000D02773 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = Vendor/AppCenterAnalytics.framework; sourceTree = "<group>"; };
 		921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		922D01282518CBA300079816 /* AppCenterDistribute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterDistribute.framework; path = Carthage/Build/iOS/AppCenterDistribute.framework; sourceTree = "<group>"; };
+		922D01292518CBA300079816 /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenter.framework; path = Carthage/Build/iOS/AppCenter.framework; sourceTree = "<group>"; };
+		922D012A2518CBA300079816 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = Carthage/Build/iOS/AppCenterCrashes.framework; sourceTree = "<group>"; };
+		922D012B2518CBA300079816 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterAnalytics.framework; path = Carthage/Build/iOS/AppCenterAnalytics.framework; sourceTree = "<group>"; };
 		9246873D22A017E50087BFE4 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		9250BD0721E4E55D005C6D3C /* FactionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionDelegate.swift; sourceTree = "<group>"; };
 		925B6B632253CABA00D64837 /* Smash-UpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smash-UpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,17 +106,10 @@
 		929E19FF1EB0AD58004EBC43 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		92C5FBF92060027D003E3B74 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		92C5FBFF2060110A003E3B74 /* SetupTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupTableViewController.swift; sourceTree = "<group>"; };
-		92CD20DF220B1D3D00B2AB2E /* AppCenterPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterPush.framework; sourceTree = "<group>"; };
-		92CD20E0220B1D3E00B2AB2E /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterAnalytics.framework; sourceTree = "<group>"; };
-		92CD20E1220B1D3E00B2AB2E /* AppCenterDistributeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppCenterDistributeResources.bundle; sourceTree = "<group>"; };
-		92CD20E2220B1D3E00B2AB2E /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterCrashes.framework; sourceTree = "<group>"; };
-		92CD20E3220B1D3F00B2AB2E /* AppCenterDistribute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterDistribute.framework; sourceTree = "<group>"; };
-		92CD20E4220B1D3F00B2AB2E /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenter.framework; sourceTree = "<group>"; };
 		92E4B9D81F76722600F7CFD3 /* FactionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactionTableViewController.swift; sourceTree = "<group>"; };
 		92EE89DF215262A00099123E /* Smash-UpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smash-UpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EE89E1215262A00099123E /* Smash_UpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smash_UpUITests.swift; sourceTree = "<group>"; };
 		92EE89E3215262A00099123E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92F3E45B223F0FD500BC7592 /* Dwifft.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dwifft.framework; path = Carthage/Build/iOS/Dwifft.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +124,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9211F0062281A62700D02773 /* AppCenterDistribute.framework in Frameworks */,
-				9211F0092281A65000D02773 /* AppCenterCrashes.framework in Frameworks */,
-				927759DA2237646600E476F1 /* ReSwift.framework in Frameworks */,
-				9211F0052281A62700D02773 /* AppCenter.framework in Frameworks */,
-				9211F00A2281A65000D02773 /* AppCenterAnalytics.framework in Frameworks */,
+				922D012C2518CBA300079816 /* AppCenterDistribute.framework in Frameworks */,
+				922D01302518CBA300079816 /* AppCenterCrashes.framework in Frameworks */,
+				922D012E2518CBA300079816 /* AppCenter.framework in Frameworks */,
+				922D01372518CBF800079816 /* ReSwift.framework in Frameworks */,
+				922D01322518CBA300079816 /* AppCenterAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,14 +169,11 @@
 		924588D81F6752DA0094F6C5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				92F3E45B223F0FD500BC7592 /* Dwifft.framework */,
+				922D01292518CBA300079816 /* AppCenter.framework */,
+				922D012B2518CBA300079816 /* AppCenterAnalytics.framework */,
+				922D012A2518CBA300079816 /* AppCenterCrashes.framework */,
+				922D01282518CBA300079816 /* AppCenterDistribute.framework */,
 				92118758221FF30000BA9B7F /* ReSwift.framework */,
-				92CD20E4220B1D3F00B2AB2E /* AppCenter.framework */,
-				92CD20E0220B1D3E00B2AB2E /* AppCenterAnalytics.framework */,
-				92CD20E2220B1D3E00B2AB2E /* AppCenterCrashes.framework */,
-				92CD20E3220B1D3F00B2AB2E /* AppCenterDistribute.framework */,
-				92CD20E1220B1D3E00B2AB2E /* AppCenterDistributeResources.bundle */,
-				92CD20DF220B1D3D00B2AB2E /* AppCenterPush.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -226,7 +235,6 @@
 				929E19E51EB0A77B004EBC43 /* Info.plist */,
 				92C5FBF92060027D003E3B74 /* GameViewController.swift */,
 				927C3F601F224CDF00233977 /* Helpers */,
-				92CD20DE220B1D0900B2AB2E /* Vendor */,
 				9246873D22A017E50087BFE4 /* ResultViewController.swift */,
 			);
 			path = "Smash-Up";
@@ -239,18 +247,6 @@
 				921AB55320B1E8110068F467 /* PlayerTableViewCell.swift */,
 			);
 			name = "Game Setup";
-			sourceTree = "<group>";
-		};
-		92CD20DE220B1D0900B2AB2E /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				9211F0082281A65000D02773 /* AppCenterAnalytics.framework */,
-				9211F0072281A65000D02773 /* AppCenterCrashes.framework */,
-				9211F0022281A62600D02773 /* AppCenter.framework */,
-				9211F0032281A62700D02773 /* AppCenterDistribute.framework */,
-				9211F0012281A62600D02773 /* AppCenterDistributeResources.bundle */,
-			);
-			name = Vendor;
 			sourceTree = "<group>";
 		};
 		92EE89E0215262A00099123E /* Smash-UpUITests */ = {
@@ -291,6 +287,7 @@
 				929E19D31EB0A77B004EBC43 /* Frameworks */,
 				929E19D41EB0A77B004EBC43 /* Resources */,
 				927759DB223764ED00E476F1 /* ShellScript */,
+				922D01342518CBA300079816 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -394,7 +391,6 @@
 				929E19E41EB0A77B004EBC43 /* LaunchScreen.storyboard in Resources */,
 				929E19E11EB0A77B004EBC43 /* Assets.xcassets in Resources */,
 				929E19DF1EB0A77B004EBC43 /* Main.storyboard in Resources */,
-				9211F0042281A62700D02773 /* AppCenterDistributeResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
