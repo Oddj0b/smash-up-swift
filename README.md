@@ -1,1 +1,1 @@
-[![Build status](https://build.appcenter.ms/v0.1/apps/2d2cb047-b687-4746-8b84-f8b27cae7964/branches/master/badge)](https://appcenter.ms)
+![Build and Test app](https://github.com/Oddj0b/smash-up-swift/workflows/Build%20and%20Test%20app/badge.svg)
