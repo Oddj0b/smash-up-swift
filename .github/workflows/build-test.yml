@@ -1,5 +1,5 @@
 name: Build and Test app
-on: 
+on:
   push:
     branches: [base]
 jobs:
@@ -10,8 +10,10 @@ jobs:
       XC_XCODEPROJECT: ${{ 'Smash-up.xcodeproj' }}
       XC_SCHEME: ${{ 'Smash-Up' }}
     steps:
-    - name: Select latest Xcode
-      run: "sudo xcode-select -s /Applications/Xcode_$XC_VERSION.app"
-    - uses: actions/checkout@v2
-    - name: Run Unit and UI Tests
-      run: /usr/bin/xcodebuild test -project "$XC_XCODEPROJECT" -scheme "$XC_SCHEME" -destination 'platform=iOS Simulator,name=iPhone 11'
+      - name: coherent-swift
+        uses: arthurpalves/coherent-swift@0.5.5
+      - name: Select latest Xcode
+        run: "sudo xcode-select -s /Applications/Xcode_$XC_VERSION.app"
+      - uses: actions/checkout@v2
+      - name: Run Unit and UI Tests
+        run: /usr/bin/xcodebuild test -project "$XC_XCODEPROJECT" -scheme "$XC_SCHEME" -destination 'platform=iOS Simulator,name=iPhone 11'
